@@ -27,7 +27,8 @@ const main = async () => {
   ).padEnd(66, '0');
 
   console.log(`Sovereign Account Address on Relay: ${sovAddressRelay}`);
-  console.log(`Sovereign Account Address on other Parachains: ${sovAddressPara}`);
+  console.log(`Sovereign Account Address on other Parachains (Generic): ${sovAddressPara}`);
+  console.log(`Sovereign Account Address on Moonbase Alpha: ${sovAddressPara.slice(0, 42)}`);
 };
 
 main();
