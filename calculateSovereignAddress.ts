@@ -28,7 +28,9 @@ const main = async () => {
 
   console.log(`Sovereign Account Address on Relay: ${sovAddressRelay}`);
   console.log(`Sovereign Account Address on other Parachains (Generic): ${sovAddressPara}`);
-  console.log(`Sovereign Account Address on Moonbase Alpha: ${sovAddressPara.slice(0, 42)}`);
+  console.log(`Sovereign Account Address on Moonbase Alpha: ${sovAddressPara.slice(0, 42)}\n\n`);
+
+  await relayApi.disconnect();
 };
 
 main();

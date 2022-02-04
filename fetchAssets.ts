@@ -49,7 +49,9 @@ const main = async () => {
     assetsList.push(assetMetadata);
   }
 
-  console.log(assetsList);
+  console.log(`${assetsList}\n\n`);
+
+  await api.disconnect();
 };
 
 main();
