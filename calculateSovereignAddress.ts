@@ -5,12 +5,26 @@ import yargs from 'yargs';
 
 const args = yargs.options({
   'para-id': { type: 'string', demandOption: true, alias: 'paraid' },
+  relay: { type: 'string', demandOption: false, alias: 'r' },
 }).argv;
 
+let relayURL;
+switch (args['relay'].toLowerCase()) {
+  case 'polkadot':
+    relayURL = 'wss://rpc.polkadot.io';
+    break;
+  case 'kusama':
+    relayURL = 'wss://kusama-rpc.polkadot.io';
+    break;
+  case 'moonbase':
+    relayURL = 'wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network';
+    break;
+  default:
+    console.error('Relay chains are Polkadot, Kusama or Moonbase');
+}
+
 const main = async () => {
-  const relayProvider = new WsProvider(
-    'wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network'
-  );
+  const relayProvider = new WsProvider(relayURL);
 
   const relayApi = await ApiPromise.create({
     provider: relayProvider,

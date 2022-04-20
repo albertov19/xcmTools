@@ -6,18 +6,26 @@
 */
 import { ApiPromise, WsProvider } from '@polkadot/api';
 import { bnToHex, stringToHex } from '@polkadot/util';
+import yargs from 'yargs';
+
+const args = yargs.options({
+  'ws-provider': { type: 'string', demandOption: false, alias: 'w' },
+}).argv;
+
+/*
+Moonbeam wss://wss.api.moonbeam.network
+Moonriver wss://wss.moonriver.moonbeam.network
+Moonbase wss://wss.api.moonbase.moonbeam.network
+*/
+
+// Create Provider
+const wsProvider = new WsProvider(args['ws-provider']);
 
 // Variables
 let assetsList = Array();
 let assetMetadata;
 let assetID = BigInt(0);
 let hexID;
-
-// Create Provider
-//Moonriver
-//const wsProvider = new WsProvider('wss://wss.moonriver.moonbeam.network');
-//Moonbase
-const wsProvider = new WsProvider('wss://wss.api.moonbase.moonbeam.network');
 
 const main = async () => {
   // Wait for Provider
