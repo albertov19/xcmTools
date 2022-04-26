@@ -5,7 +5,7 @@ import yargs from 'yargs';
 
 const args = yargs.options({
   'para-id': { type: 'string', demandOption: true, alias: 'paraid' },
-  relay: { type: 'string', demandOption: false, alias: 'r' },
+  relay: { type: 'string', demandOption: true, alias: 'r' },
 }).argv;
 
 let relayURL;
