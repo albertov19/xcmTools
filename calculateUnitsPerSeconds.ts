@@ -18,7 +18,7 @@ const CoinGeckoClient = new CoinGecko();
 
 async function main() {
   let tokenPrice;
-  let tokenData;
+  let tokenData = {} as any;
 
   // Get Token Price - If not provided it will use CoinGecko API to get it
   if (!args['price']) {
@@ -28,8 +28,9 @@ async function main() {
     });
     tokenPrice = BigInt(decimalsFactor * tokenData.data[args['asset']].usd);
   } else {
+    // Use given price
     tokenPrice = BigInt(decimalsFactor * args['price']);
-    tokenData.sucess = true;
+    tokenData.success = true;
   }
 
   if (tokenData.success) {
