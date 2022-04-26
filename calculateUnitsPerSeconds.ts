@@ -2,10 +2,10 @@ import yargs from 'yargs';
 import CoinGecko from 'coingecko-api';
 
 const args = yargs.options({
-  asset: { type: 'string', demandOption: true, alias: 'a' },
   decimals: { type: 'string', demandOption: true, alias: 'd' },
   'xcm-op-cost': { type: 'string', demandOption: true, alias: 'xoc' },
   price: { type: 'string', demandOption: false, alias: 'p' }, // overwrite price
+  asset: { type: 'string', demandOption: false, alias: 'a' },
 }).argv;
 
 // Target Price in USD
@@ -22,10 +22,17 @@ async function main() {
 
   // Get Token Price - If not provided it will use CoinGecko API to get it
   if (!args['price']) {
-    tokenData = await CoinGeckoClient.simple.price({
-      ids: args['asset'],
-      vs_currencies: 'usd',
-    });
+    if (args['asset']) {
+      tokenData = await CoinGeckoClient.simple.price({
+        ids: args['asset'],
+        vs_currencies: 'usd',
+      });
+    } else {
+      console.error(
+        'You need to provide either an asset name with <--a> or a fixed price with <--p>'
+      );
+    }
+
     tokenPrice = BigInt(decimalsFactor * tokenData.data[args['asset']].usd);
   } else {
     // Use given price
