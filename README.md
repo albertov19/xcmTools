@@ -25,6 +25,8 @@ Then, run script with `ts-node` depending on the file
 
 `calculateUnitsPerSeconds --a <"asset name kusama/karura/kintsugi"> --d <"decimals"> --xoc <"WeighUnitsPerXCMInstruction"> --price <"asset-price">` simple tool to calculate the units per second to be charged for a given target price (0.02$ per XCM transfer). It uses the CoinGecko API to fetch the token price, although it can be overwritten with `--price` flag. You need to provide the asset name as supported by CoinGecko (flag `--aset` or `--a`), the decimals (flag --decimals or `-d`) and the cost of each XCM instruction (`--xcm-op-cost` or `--xoc`)
 
+`calculateBatchUnitsPerSeconds --n <"network moonbeam/moonriver">` script to calculate the batched encoded call data to set the units per second for XCM msgs for all supported types. It wil read the asset information from the `assets.json` file that needs to be manually updated. It uses the CoinGecko API to fetch the token price, although it can be overwritten with a price key and value in the `.json` file. Check `calculateUnitsPerSeconds` for more help.
+
 `fetchAssets --w <"ws_endpoint">` gets a list of XC-20 assets in the given network. Returns the name, symbol, decimals and token's precompile address. Need to provide the ws provider (`--w`)
 
 

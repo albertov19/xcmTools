@@ -1,0 +1,56 @@
+{
+  "moonbeam": [],
+  "moonriver": [
+    {
+      "name": "Kusama",
+      "api-name": "kusama",
+      "assetID": "42259045809535163221576417993425387648"
+    },
+    {
+      "name": "Karura",
+      "api-name": "karura",
+      "assetID": "10810581592933651521121702237638664357"
+    },
+    {
+      "name": "Acalla Dollar",
+      "api-name": "usd-coin",
+      "assetID": "214920334981412447805621250067209749032"
+    },
+    {
+      "name": "Khala Phala",
+      "api-name": "pha",
+      "assetID": "189307976387032586987344677431204943363",
+      "price": 0.26
+    },
+    {
+      "name": "Kintsugi",
+      "api-name": "kintsugi",
+      "assetID": "175400718394635817552109270754364440562"
+    },
+    {
+      "name": "KintsugiBTC",
+      "api-name": "bitcoin",
+      "assetID": "328179947973504579459046439826496046832"
+    },
+    {
+      "name": "Bifrost BNC",
+      "api-name": "bifrost-native-coin",
+      "assetID": "319623561105283008236062145480775032445"
+    },
+    {
+      "name": "Crust Shadow",
+      "api-name": "crust-storage-market",
+      "assetID": "108457044225666871745333730479173774551"
+    },
+    {
+      "name": "Tether USDT Statemine",
+      "api-name": "usd-coin",
+      "assetID": "311091173110107856861649819128533077277"
+    },
+    {
+      "name": "RMRK Statemine",
+      "api-name": "rmrk",
+      "assetID": "182365888117048807484804376330534607370"
+    }
+  ]
+}
