@@ -6,32 +6,21 @@ import yargs from 'yargs';
 
 const args = yargs.options({
   asset: { type: 'string', demandOption: true, alias: 'a' },
-  'ws-provider': { type: 'string', demandOption: false, alias: 'w' },
+  network: { type: 'string', demandOption: false, alias: 'n' },
 }).argv;
 
-/*const assetML = {
-  parents: 1,
-  interior: {
-    X2: [
-      {
-        Parachain: 1000,
-      },
-      { PalletInstance: 50 },
-      {
-        GeneralIndex: 1984,
-      },
-    ],
-  },
-};*/
-
-/*
-Moonbeam wss://wss.api.moonbeam.network
-Moonriver wss://wss.moonriver.moonbeam.network
-Moonbase wss://wss.api.moonbase.moonbeam.network
-*/
-
 // Create Provider
-const wsProvider = new WsProvider(args['ws-provider']);
+let wsProvider;
+if (args['network'] === 'moonbeam') {
+  wsProvider = new WsProvider('wss://wss.api.moonbeam.network');
+} else if (args['network'] === 'moonriver') {
+  wsProvider = new WsProvider('wss://wss.api.moonriver.moonbeam.network');
+} else if (args['network'] === 'moonbase') {
+  wsProvider = new WsProvider('wss://wss.api.moonbase.moonbeam.network');
+} else {
+  console.error('Network not supported');
+  process.exit();
+}
 
 const main = async () => {
   // Wait for Provider

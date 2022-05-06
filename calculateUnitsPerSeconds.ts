@@ -2,8 +2,8 @@ import yargs from 'yargs';
 import CoinGecko from 'coingecko-api';
 
 const args = yargs.options({
-  decimals: { type: 'string', demandOption: false, alias: 'd' },
-  'xcm-op-cost': { type: 'string', demandOption: false, alias: 'xoc' },
+  decimals: { type: 'string', demandOption: true, alias: 'd' },
+  'xcm-op-cost': { type: 'string', demandOption: true, alias: 'xoc' },
   price: { type: 'string', demandOption: false, alias: 'p' }, // overwrite price
   asset: { type: 'string', demandOption: false, alias: 'a' },
 }).argv;
