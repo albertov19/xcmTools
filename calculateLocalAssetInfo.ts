@@ -51,11 +51,13 @@ const main = async () => {
     const asset: any = api.createType('u128', JSON.parse(args['asset']));
 
     // For Legacy Assed ID we need to add 1 byte that is  4 x length of the original uint8
-    const tempUintArray = new Uint8Array(1);
-    tempUintArray[0] = 4 * asset.toU8a().length;
-    const legacyAsset = new Uint8Array(Buffer.concat([tempUintArray, Buffer.from(asset.toU8a())]));
+    const legacyAsset = new Uint8Array([
+        ...numberToU8a(4 * asset.toU8a().length),
+        ...asset.toU8a(),
+    ]);
 
     const assetIdHex = u8aToHex(api.registry.hash(asset.toU8a()).slice(0, 16).reverse());
+    console.log(assetIdHex);
     const assetIdLegacyHex = u8aToHex(api.registry.hash(legacyAsset).slice(0, 16).reverse());
 
     // Calculate Good Asset ID Stuff
