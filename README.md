@@ -21,7 +21,7 @@ Then, run script with `ts-node` depending on the file
 
 `calculateLocalAssetInfo --w <"ws_endpoint"> --a <"asset">` calculates the storage key element, XC-20 address and Asset ID of a given asset. Need to provide the ws provider (`--w`) and the local asset counter (`--a`)  
 
-`calculateMultilocationInfo --w <"ws_endpoint"> --a <"asset">` calculates the storage key element, XC-20 address and Asset ID of a given asset. Need to provide the ws provider (`--w`) and the asset multilocation (`--a`)  
+`calculateMultilocationInfo --n <"network"> --a <"asset">` calculates the storage key element, XC-20 address and Asset ID of a given asset. Need to provide the network (Moonbeam, Moonriver, Moonbase) (`--n`) and the asset multilocation (`--a`)  
 
 `calculateSovereignAddress --r <"polkadot/kusama/moonbase"> --paraid <"para-id">` prints the sovereign account of a given parachain Id for the relay chain, and for other parachains. Need to provide the relay to use (`--r` either polkadot, kusama or moonbase) and the parachain id
 
