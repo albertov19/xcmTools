@@ -1,5 +1,37 @@
 {
-  "moonbeam": [],
+  "moonbeam": [
+    {
+      "name": "Polkadot",
+      "api-name": "polkadot",
+      "assetID": "42259045809535163221576417993425387648"
+    },
+    {
+      "name": "Interlay",
+      "assetID": "101170542313601871197860408087030232491",
+      "api-name": "interlay"
+    },
+    {
+      "name": "interBTC",
+      "api-name": "bitcoin",
+      "assetID": "120637696315203257380661607956669368914"
+    },
+    {
+      "name": "Parallel",
+      "assetID": "32615670524745285411807346420584982855",
+      "price": 0.0348
+    },
+    {
+      "name": "Acalla Dollar",
+      "api-name": "usd-coin",
+      "assetID": "110021739665376159354538090254163045594"
+    },
+
+    {
+      "name": "Acalla",
+      "api-name": "acalla",
+      "assetID": "224821240862170613278369189818311486111"
+    }
+  ],
   "moonriver": [
     {
       "name": "Kusama",
@@ -19,8 +51,7 @@
     {
       "name": "Khala Phala",
       "api-name": "pha",
-      "assetID": "189307976387032586987344677431204943363",
-      "price": 0.26
+      "assetID": "189307976387032586987344677431204943363"
     },
     {
       "name": "Kintsugi",
@@ -51,6 +82,41 @@
       "name": "RMRK Statemine",
       "api-name": "rmrk",
       "assetID": "182365888117048807484804376330534607370"
+    },
+    {
+      "name": "Parallel Heiko",
+      "assetID": "76100021443485661246318545281171740067",
+      "price": 0.09
+    },
+    {
+      "name": "Integritee Network",
+      "api-name": "integritee",
+      "assetID": "105075627293246237499203909093923548958"
+    },
+    {
+      "name": "Crab Token",
+      "api-name": "darwinia-crab-network",
+      "assetID": "173481220575862801646329923366065693029"
+    },
+    {
+      "name": "Calamari Token",
+      "api-name": "calamari-network",
+      "assetID": "213357169630950964874127107356898319277"
+    },
+    {
+      "name": "Shiden",
+      "api-name": "shiden",
+      "assetID": "16797826370226091782818345603793389938"
+    },
+    {
+      "name": "Litmus",
+      "api-name": "litentry",
+      "assetID": "65216491554813189869575508812319036608"
+    },
+    {
+      "name": "Calamari Token",
+      "api-name": "calamari-network",
+      "assetID": "213357169630950964874127107356898319277"
     }
   ]
 }

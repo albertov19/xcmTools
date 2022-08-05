@@ -17,9 +17,11 @@ Then, run script with `ts-node` depending on the file
 
 ## Scripts
 
-`calculateAddressStorageKey --w <"ws_endpoint"> --a <"address">` calculates the storage key element of a specific EVM address. Need to provide the address (`--a`) and the ws provider (`--w`)
+`calculateBatchUnitsPerSecond --n <"network">` calcualtes the encoded call data for a democracy proposal to update the `UnitsPerSecond` for all assets in `assets.json`
 
 `calculateLocalAssetInfo --w <"ws_endpoint"> --a <"asset">` calculates the storage key element, XC-20 address and Asset ID of a given asset. Need to provide the ws provider (`--w`) and the local asset counter (`--a`)  
+
+`calculateMultilocationDerivative --w <"ws_endpoint"> --a <"address"> --p <"para-id">` calculates the multilocaiton-derived address for remote calls through XCM. Need to provide the ws provider (`--w`) of the target parachain, the address (`--a`) of the origin account, and the parachain id (`--p`) of the origin parachain 
 
 `calculateMultilocationInfo --n <"network"> --a <"asset">` calculates the storage key element, XC-20 address and Asset ID of a given asset. Need to provide the network (Moonbeam, Moonriver, Moonbase) (`--n`) and the asset multilocation (`--a`)  
 
