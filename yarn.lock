@@ -21,6 +21,11 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@moonbeam-network/api-augment@^0.1700.0":
+  version "0.1700.0"
+  resolved "https://registry.yarnpkg.com/@moonbeam-network/api-augment/-/api-augment-0.1700.0.tgz#bc080c1af5827b542c43d9e0781e6d44a7073034"
+  integrity sha512-HpRVtS1HyONSrPNGh8pkjqU9TDCItF0WdX/VfYtFFXgXyUz+KFb8fEK/frU4G7ZZmskMUmCxi/ccMfH86dgMuw==
+
 "@noble/hashes@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.0.0.tgz#d5e38bfbdaba174805a4e649f13be9a9ed3351ae"

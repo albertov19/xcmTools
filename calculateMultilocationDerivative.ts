@@ -3,11 +3,13 @@ import { u8aToHex, hexToU8a } from '@polkadot/util';
 import { decodeAddress } from '@polkadot/util-crypto';
 import yargs from 'yargs';
 import { MultiLocation } from '@polkadot/types/interfaces';
+import '@moonbeam-network/api-augment/moonbase';
 
 const args = yargs.options({
   'parachain-ws-provider': { type: 'string', demandOption: true, alias: 'w' }, //Target WS Provider
   address: { type: 'string', demandOption: true, alias: 'a' },
-  'para-id': { type: 'string', demandOption: false, alias: 'p' }, //Origin Parachain ID
+  'para-id': { type: 'string', demandOption: false, alias: 'p' }, //Origin Parachain ID,
+  named: { type: 'string', demandOption: false, alias: 'n' }, // Named optional
 }).argv;
 
 // Construct
@@ -22,34 +24,39 @@ async function main() {
   let account;
   const ethAddress = address.length === 42;
 
+  // Handle name
+  let named;
+  if (args['named']) {
+    named = { Named: args['named'] };
+  } else {
+    named = 'Any';
+  }
+
   // Handle address
   if (!ethAddress) {
     address = decodeAddress(address);
-    account = { AccountId32: { network: 'Any', id: u8aToHex(address) } };
+    account = { AccountId32: { network: named, id: u8aToHex(address) } };
   } else {
-    account = { AccountKey20: { network: 'Any', key: address } };
+    account = { AccountKey20: { network: named, key: address } };
   }
 
   // Handle para-id
-  let parents;
   let interior;
   if (args['para-id']) {
-    parents = 1;
     interior = {
       X2: [{ Parachain: JSON.parse(args['para-id']) }, account],
     };
   } else {
-    parents = 0;
     interior = {
       X1: account,
     };
   }
 
   const multilocation: MultiLocation = api.createType(
-    'MultiLocation',
+    'XcmV1MultiLocation',
     JSON.parse(
       JSON.stringify({
-        parents: 0,
+        parents: 1,
         interior: interior,
       })
     )
