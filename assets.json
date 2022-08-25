@@ -18,18 +18,23 @@
     {
       "name": "Parallel",
       "assetID": "32615670524745285411807346420584982855",
-      "price": 0.0348
+      "price": 0.0329
     },
     {
-      "name": "Acalla Dollar",
+      "name": "Acala Dollar",
       "api-name": "usd-coin",
       "assetID": "110021739665376159354538090254163045594"
     },
 
     {
-      "name": "Acalla",
-      "api-name": "acalla",
+      "name": "Acala",
+      "api-name": "acala",
       "assetID": "224821240862170613278369189818311486111"
+    },
+    {
+      "name": "Phala Token",
+      "api-name": "pha",
+      "assetID": "132685552157663328694213725410064821485"
     }
   ],
   "moonriver": [
@@ -44,7 +49,7 @@
       "assetID": "10810581592933651521121702237638664357"
     },
     {
-      "name": "Acalla Dollar",
+      "name": "Acala Dollar",
       "api-name": "usd-coin",
       "assetID": "214920334981412447805621250067209749032"
     },
@@ -86,7 +91,7 @@
     {
       "name": "Parallel Heiko",
       "assetID": "76100021443485661246318545281171740067",
-      "price": 0.1491
+      "price": 0.133
     },
     {
       "name": "Integritee Network",
@@ -112,11 +117,6 @@
       "name": "Litmus",
       "api-name": "litentry",
       "assetID": "65216491554813189869575508812319036608"
-    },
-    {
-      "name": "Calamari Token",
-      "api-name": "calamari-network",
-      "assetID": "213357169630950964874127107356898319277"
     }
   ]
 }

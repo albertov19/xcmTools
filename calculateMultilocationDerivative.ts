@@ -7,7 +7,7 @@ import { MultiLocation } from '@polkadot/types/interfaces';
 const args = yargs.options({
   'parachain-ws-provider': { type: 'string', demandOption: true, alias: 'w' }, //Target WS Provider
   address: { type: 'string', demandOption: true, alias: 'a' },
-  'para-id': { type: 'string', demandOption: true, alias: 'p' }, //Origin Parachain ID
+  'para-id': { type: 'string', demandOption: false, alias: 'p' }, //Origin Parachain ID
 }).argv;
 
 // Construct
@@ -22,21 +22,35 @@ async function main() {
   let account;
   const ethAddress = address.length === 42;
 
+  // Handle address
   if (!ethAddress) {
     address = decodeAddress(address);
-    account = { AccountId32: { network: 'Any', id: address } };
+    account = { AccountId32: { network: 'Any', id: u8aToHex(address) } };
   } else {
     account = { AccountKey20: { network: 'Any', key: address } };
+  }
+
+  // Handle para-id
+  let parents;
+  let interior;
+  if (args['para-id']) {
+    parents = 1;
+    interior = {
+      X2: [{ Parachain: JSON.parse(args['para-id']) }, account],
+    };
+  } else {
+    parents = 0;
+    interior = {
+      X1: account,
+    };
   }
 
   const multilocation: MultiLocation = api.createType(
     'MultiLocation',
     JSON.parse(
       JSON.stringify({
-        parents: 1,
-        interior: {
-          X2: [{ Parachain: JSON.parse(args['para-id']) }, account],
-        },
+        parents: 0,
+        interior: interior,
       })
     )
   );
