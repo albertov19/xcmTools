@@ -118,5 +118,77 @@
       "api-name": "litentry",
       "assetID": "65216491554813189869575508812319036608"
     }
+  ],
+  "moonbase": [
+    {
+      "name": "UNITs",
+      "api-name": "kusama",
+      "assetID": "42259045809535163221576417993425387648"
+    },
+    {
+      "name": "Karura",
+      "api-name": "karura",
+      "assetID": "10810581592933651521121702237638664357"
+    },
+    {
+      "name": "Acala Dollar",
+      "api-name": "usd-coin",
+      "assetID": "214920334981412447805621250067209749032"
+    },
+    {
+      "name": "Khala Phala",
+      "api-name": "pha",
+      "assetID": "189307976387032586987344677431204943363"
+    },
+    {
+      "name": "Kintsugi",
+      "api-name": "kintsugi",
+      "assetID": "52837329483626033197882584414163773570"
+    },
+    {
+      "name": "KintsugiBTC",
+      "api-name": "bitcoin",
+      "assetID": "122531866982275221270783173426160033062"
+    },
+    {
+      "name": "Bifrost BNC",
+      "api-name": "bifrost-native-coin",
+      "assetID": "42109858202732255156900361585267092733"
+    },
+    {
+      "name": "Crust Shadow",
+      "api-name": "crust-storage-market",
+      "assetID": "108457044225666871745333730479173774551"
+    },
+    {
+      "name": "RMRK Statemine",
+      "api-name": "rmrk",
+      "assetID": "280024949790879322861822169150106601773"
+    },
+    {
+      "name": "Parallel Heiko",
+      "assetID": "76100021443485661246318545281171740067",
+      "price": 0.133
+    },
+    {
+      "name": "Integritee Network",
+      "api-name": "integritee",
+      "assetID": "105075627293246237499203909093923548958"
+    },
+    {
+      "name": "Calamari Token",
+      "api-name": "calamari-network",
+      "assetID": "213357169630950964874127107356898319277"
+    },
+    {
+      "name": "Shiden",
+      "api-name": "shiden",
+      "assetID": "16797826370226091782818345603793389938"
+    },
+    {
+      "name": "Litmus",
+      "api-name": "litentry",
+      "assetID": "65216491554813189869575508812319036608"
+    }
   ]
 }
