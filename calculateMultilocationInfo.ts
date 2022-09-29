@@ -5,52 +5,47 @@ import { MultiLocation } from '@polkadot/types/interfaces';
 import yargs from 'yargs';
 
 const args = yargs.options({
-    asset: { type: 'string', demandOption: true, alias: 'a' },
-    network: { type: 'string', demandOption: false, alias: 'n' },
+  asset: { type: 'string', demandOption: true, alias: 'a' },
+  network: { type: 'string', demandOption: true, alias: 'n' },
 }).argv;
 
 // Create Provider
 let wsProvider;
 if (args['network'].toLowerCase() === 'moonbeam') {
-    wsProvider = new WsProvider('wss://wss.api.moonbeam.network');
+  wsProvider = new WsProvider('wss://wss.api.moonbeam.network');
 } else if (args['network'].toLowerCase() === 'moonriver') {
-    wsProvider = new WsProvider('wss://wss.api.moonriver.moonbeam.network');
+  wsProvider = new WsProvider('wss://wss.api.moonriver.moonbeam.network');
 } else if (args['network'].toLowerCase() === 'moonbase') {
-    wsProvider = new WsProvider('wss://wss.api.moonbase.moonbeam.network');
+  wsProvider = new WsProvider('wss://wss.api.moonbase.moonbeam.network');
 } else {
-    console.error('Network not supported');
-    process.exit();
+  console.error('Network not supported');
+  process.exit();
 }
 
 const main = async () => {
-    // Wait for Provider
-    const api = await ApiPromise.create({
-        provider: wsProvider,
-    });
-    await api.isReady;
+  // Wait for Provider
+  const api = await ApiPromise.create({
+    provider: wsProvider,
+  });
+  await api.isReady;
 
-    const asset: MultiLocation = api.createType('MultiLocation', JSON.parse(args['asset']));
+  const asset: MultiLocation = api.createType('MultiLocation', JSON.parse(args['asset']));
 
-    const assetIdHex = u8aToHex(api.registry.hash(asset.toU8a()).slice(0, 16).reverse());
+  const assetIdHex = u8aToHex(api.registry.hash(asset.toU8a()).slice(0, 16).reverse());
 
-    let palletEncoder = new TextEncoder().encode('EVM');
-    let palletHash = xxhashAsU8a(palletEncoder, 128);
-    let storageEncoder = new TextEncoder().encode('AccountCodes');
-    let storageHash = xxhashAsU8a(storageEncoder, 128);
-    let assetAddress = new Uint8Array([...hexToU8a('0xFFFFFFFF'), ...hexToU8a(assetIdHex)]);
-    let addressHash = blake2AsU8a(assetAddress, 128);
-    let concatKey = new Uint8Array([
-        ...palletHash,
-        ...storageHash,
-        ...addressHash,
-        ...assetAddress,
-    ]);
+  let palletEncoder = new TextEncoder().encode('EVM');
+  let palletHash = xxhashAsU8a(palletEncoder, 128);
+  let storageEncoder = new TextEncoder().encode('AccountCodes');
+  let storageHash = xxhashAsU8a(storageEncoder, 128);
+  let assetAddress = new Uint8Array([...hexToU8a('0xFFFFFFFF'), ...hexToU8a(assetIdHex)]);
+  let addressHash = blake2AsU8a(assetAddress, 128);
+  let concatKey = new Uint8Array([...palletHash, ...storageHash, ...addressHash, ...assetAddress]);
 
-    console.log(`Storage Key ${u8aToHex(concatKey)}`);
-    console.log(`Asset Address Precompile: ${u8aToHex(assetAddress)}`);
-    console.log(`Asset ID is ${BigInt(assetIdHex).toString(10)}\n\n`);
+  console.log(`Storage Key ${u8aToHex(concatKey)}`);
+  console.log(`Asset Address Precompile: ${u8aToHex(assetAddress)}`);
+  console.log(`Asset ID is ${BigInt(assetIdHex).toString(10)}\n\n`);
 
-    await api.disconnect();
+  await api.disconnect();
 };
 
 main();

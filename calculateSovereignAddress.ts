@@ -9,15 +9,19 @@ const args = yargs.options({
 }).argv;
 
 let relayURL;
+let moonNetwork;
 switch (args['relay'].toLowerCase()) {
   case 'polkadot':
     relayURL = 'wss://rpc.polkadot.io';
+    moonNetwork = 'Moonbeam';
     break;
   case 'kusama':
     relayURL = 'wss://kusama-rpc.polkadot.io';
+    moonNetwork = 'Moonriver';
     break;
   case 'moonbase':
     relayURL = 'wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network';
+    moonNetwork = 'Moonbase Alpha';
     break;
   default:
     console.error('Relay chains are Polkadot, Kusama or Moonbase');
@@ -42,7 +46,7 @@ const main = async () => {
 
   console.log(`Sovereign Account Address on Relay: ${sovAddressRelay}`);
   console.log(`Sovereign Account Address on other Parachains (Generic): ${sovAddressPara}`);
-  console.log(`Sovereign Account Address on Moonbase Alpha: ${sovAddressPara.slice(0, 42)}\n\n`);
+  console.log(`Sovereign Account Address on ${moonNetwork}: ${sovAddressPara.slice(0, 42)}\n\n`);
 
   await relayApi.disconnect();
 };

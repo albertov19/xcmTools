@@ -189,6 +189,11 @@
       "name": "Litmus",
       "api-name": "litentry",
       "assetID": "65216491554813189869575508812319036608"
+    },
+    {
+      "name": "Darwinia",
+      "api-name": "darwinia-network-native-token",
+      "assetID": "125699734534028342599692732320197985871"
     }
   ]
 }
