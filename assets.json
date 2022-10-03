@@ -194,6 +194,11 @@
       "name": "Darwinia",
       "api-name": "darwinia-network-native-token",
       "assetID": "125699734534028342599692732320197985871"
+    },
+    {
+      "name": "Robonomics Token",
+      "api-name": "robonomics-network",
+      "assetID": ""
     }
   ]
 }
