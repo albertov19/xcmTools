@@ -199,6 +199,21 @@
       "name": "Robonomics Token",
       "api-name": "robonomics-network",
       "assetID": ""
+    },
+    {
+      "name": "Metaverse Network Pioneer Token",
+      "api-name": "metaverse-network-pioneer",
+      "assetID": ""
+    },
+    {
+      "name": "Bifrost Native Coin",
+      "api-name": "bifrost-native-coin",
+      "assetID": ""
+    },
+    {
+      "name": "Equilibrium Token",
+      "api-name": "equilibrium-token",
+      "assetID": ""
     }
   ]
 }
