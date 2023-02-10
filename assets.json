@@ -117,6 +117,11 @@
       "name": "Litmus",
       "api-name": "litentry",
       "assetID": "65216491554813189869575508812319036608"
+    },
+    {
+      "name": "Robonomics Token",
+      "api-name": "robonomics-network",
+      "assetID": "108036400430056508975016746969135344601"
     }
   ],
   "moonbase": [
@@ -194,6 +199,26 @@
       "name": "Darwinia",
       "api-name": "darwinia-network-native-token",
       "assetID": "125699734534028342599692732320197985871"
+    },
+    {
+      "name": "Robonomics Token",
+      "api-name": "robonomics-network",
+      "assetID": "108036400430056508975016746969135344601"
+    },
+    {
+      "name": "Metaverse Network Pioneer Token",
+      "api-name": "metaverse-network-pioneer",
+      "assetID": "52280927600883288560727505734200597597"
+    },
+    {
+      "name": "Bifrost Native Coin",
+      "api-name": "bifrost-native-coin",
+      "assetID": "165823357460190568952172802245839421906"
+    },
+    {
+      "name": "Equilibrium Token",
+      "api-name": "equilibrium-token",
+      "assetID": "190590555344745888270686124937537713878"
     }
   ]
 }
