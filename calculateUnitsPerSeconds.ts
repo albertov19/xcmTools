@@ -3,27 +3,25 @@ import CoinGecko from 'coingecko-api';
 
 const args = yargs.options({
   decimals: { type: 'string', demandOption: true, alias: 'd' },
-  'xcm-op-cost': { type: 'string', demandOption: false, alias: 'xoc' },
+  'xcm-weight-cost': { type: 'string', demandOption: true, alias: 'xwc' },
+  target: { type: 'string', demandOption: false, alias: 't', default: '0.02' },
   price: { type: 'string', demandOption: false, alias: 'p' }, // overwrite price
   asset: { type: 'string', demandOption: false, alias: 'a' },
 }).argv;
 
 async function main() {
   // Target Price in USD
-  const targetPrice = BigInt(10 ** args['decimals'] * 0.02); // 2 CENTS USD
+  const targetPrice = BigInt(10 ** args['decimals'] * args['target']); // 2 CENTS USD
 
   const decimalsFactor = 10 ** args['decimals'];
+
+  // XCM Weight Cost
+  const xcmTotalCost = BigInt(args['xwc']);
 
   // Start CoinGecko API Client
   const CoinGeckoClient = new CoinGecko();
   let tokenPrice;
   let tokenData = {} as any;
-
-  // Get XCM Execution Total Cost
-  let xcmTotalCost = BigInt(4 * 200000000);
-  if (args['xcm-op-cost']) {
-    xcmTotalCost = BigInt(4 * args['xcm-op-cost']);
-  }
 
   // Get Token Price - If not provided it will use CoinGecko API to get it
   if (!args['price']) {
