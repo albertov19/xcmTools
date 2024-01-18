@@ -26,20 +26,34 @@ const main = async () => {
   // Wait for Provider
   const api = await ApiPromise.create({
     provider: wsProvider,
+    noInitWarn: true,
   });
   await api.isReady;
 
-  const asset: MultiLocation = api.createType('MultiLocation', JSON.parse(args['asset']));
+  const asset: MultiLocation = api.createType(
+    'MultiLocation',
+    JSON.parse(args['asset'])
+  );
 
-  const assetIdHex = u8aToHex(api.registry.hash(asset.toU8a()).slice(0, 16).reverse());
+  const assetIdHex = u8aToHex(
+    api.registry.hash(asset.toU8a()).slice(0, 16).reverse()
+  );
 
   let palletEncoder = new TextEncoder().encode('EVM');
   let palletHash = xxhashAsU8a(palletEncoder, 128);
   let storageEncoder = new TextEncoder().encode('AccountCodes');
   let storageHash = xxhashAsU8a(storageEncoder, 128);
-  let assetAddress = new Uint8Array([...hexToU8a('0xFFFFFFFF'), ...hexToU8a(assetIdHex)]);
+  let assetAddress = new Uint8Array([
+    ...hexToU8a('0xFFFFFFFF'),
+    ...hexToU8a(assetIdHex),
+  ]);
   let addressHash = blake2AsU8a(assetAddress, 128);
-  let concatKey = new Uint8Array([...palletHash, ...storageHash, ...addressHash, ...assetAddress]);
+  let concatKey = new Uint8Array([
+    ...palletHash,
+    ...storageHash,
+    ...addressHash,
+    ...assetAddress,
+  ]);
 
   console.log(`Storage Key ${u8aToHex(concatKey)}`);
   console.log(`Asset Address Precompile: ${u8aToHex(assetAddress)}`);

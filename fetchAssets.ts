@@ -31,6 +31,7 @@ const main = async () => {
   // Wait for Provider
   const api = await ApiPromise.create({
     provider: wsProvider,
+    noInitWarn: true,
   });
   await api.isReady;
 
@@ -48,7 +49,9 @@ const main = async () => {
     hexID = '0xffffffff' + tempHex.slice(2, tempHex.length);
 
     // Get XC-20 Asset Metadata
-    assetMetadata = (await api.query.assets.metadata(assetID.toString())).toHuman();
+    assetMetadata = (
+      await api.query.assets.metadata(assetID.toString())
+    ).toHuman();
 
     // Build result (remove isFrozen and deposit)
     assetMetadata['address'] = hexID;

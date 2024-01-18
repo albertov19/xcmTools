@@ -1,9 +1,8 @@
 import { ApiPromise, WsProvider } from '@polkadot/api';
-import { u8aToHex, hexToU8a } from '@polkadot/util';
+import { u8aToHex } from '@polkadot/util';
 import { decodeAddress } from '@polkadot/util-crypto';
 import yargs from 'yargs';
 import { MultiLocation } from '@polkadot/types/interfaces';
-import '@moonbeam-network/api-augment/moonbase';
 
 const args = yargs.options({
   'parachain-ws-provider': { type: 'string', demandOption: true, alias: 'w' }, //Target WS Provider
@@ -17,7 +16,10 @@ const wsProvider = new WsProvider(args['parachain-ws-provider']);
 
 async function main() {
   // Create Provider and Type
-  const api = await ApiPromise.create({ provider: wsProvider });
+  const api = await ApiPromise.create({
+    provider: wsProvider,
+    noInitWarn: true,
+  });
 
   // Check Ethereum Address and/or Decode
   let address = args['address'];
@@ -70,8 +72,12 @@ async function main() {
     ...multilocation.toU8a(),
   ]);
 
-  const DescendOriginAddress32 = u8aToHex(api.registry.hash(toHash).slice(0, 32));
-  const DescendOriginAddress20 = u8aToHex(api.registry.hash(toHash).slice(0, 20));
+  const DescendOriginAddress32 = u8aToHex(
+    api.registry.hash(toHash).slice(0, 32)
+  );
+  const DescendOriginAddress20 = u8aToHex(
+    api.registry.hash(toHash).slice(0, 20)
+  );
 
   console.log('32 byte address is %s', DescendOriginAddress32);
   console.log('20 byte address is %s', DescendOriginAddress20);

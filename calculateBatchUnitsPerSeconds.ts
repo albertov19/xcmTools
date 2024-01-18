@@ -35,27 +35,35 @@ async function main() {
   // Wait for Provider
   const api = await ApiPromise.create({
     provider: wsProvider,
+    noInitWarn: true,
   });
   await api.isReady;
 
   // Get Length of assets
-  let numSupportedAssets = ((await api.query.assetManager.supportedFeePaymentAssets()) as any)
-    .length;
+  let numSupportedAssets = (
+    (await api.query.assetManager.supportedFeePaymentAssets()) as any
+  ).length;
 
   // For Loop Through Assets
   for (let asset in networkAssets) {
     // Get MultiLocation
     let assetML: MultiLocation = api.createType(
       'MultiLocation',
-      (await api.query.assetManager.assetIdType(networkAssets[asset].assetID)).toJSON()['xcm']
+      (
+        await api.query.assetManager.assetIdType(networkAssets[asset].assetID)
+      ).toJSON()['xcm']
     );
 
     // Check The Asset is a Fee Asset
-    let checkAsset = await api.query.assetManager.assetTypeUnitsPerSecond({ XCM: assetML });
+    let checkAsset = await api.query.assetManager.assetTypeUnitsPerSecond({
+      XCM: assetML,
+    });
 
     if (checkAsset.toHuman() !== 'null') {
       // Get Assets Decimals
-      let decimals = (await api.query.assets.metadata(networkAssets[asset].assetID))
+      let decimals = (
+        await api.query.assets.metadata(networkAssets[asset].assetID)
+      )
         .toJSON()
         ['decimals'].toString();
 
@@ -86,7 +94,10 @@ async function main() {
   // Batch Tx
   const batchCall = api.tx.utility.batchAll(batchTxs);
 
-  console.log('Encoded proposal for batchCall is %s', batchCall.method.toHex() || '');
+  console.log(
+    'Encoded proposal for batchCall is %s',
+    batchCall.method.toHex() || ''
+  );
 }
 
 async function calculateUnitsPerSecond(args) {
@@ -113,7 +124,9 @@ async function calculateUnitsPerSecond(args) {
       );
     }
 
-    tokenPrice = BigInt(Math.round(decimalsFactor * tokenData.data[args['asset']].usd));
+    tokenPrice = BigInt(
+      Math.round(decimalsFactor * tokenData.data[args['asset']].usd)
+    );
   } else {
     // Use given price
     tokenPrice = BigInt(decimalsFactor * args['price']);
@@ -123,11 +136,14 @@ async function calculateUnitsPerSecond(args) {
   if (tokenData.success) {
     //Calculate Units Per Second
     const unitsPerSecond =
-      (targetPrice * BigInt(10 ** 12) * BigInt(decimalsFactor)) / (xcmTotalCost * tokenPrice);
+      (targetPrice * BigInt(10 ** 12) * BigInt(decimalsFactor)) /
+      (xcmTotalCost * tokenPrice);
 
     return unitsPerSecond;
   } else {
-    console.error('Token name not supported, note that is token name and not ticker!');
+    console.error(
+      'Token name not supported, note that is token name and not ticker!'
+    );
   }
 }
 
