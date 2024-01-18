@@ -1,8 +1,9 @@
 import { ApiPromise, WsProvider } from '@polkadot/api';
-import CoinGecko from 'coingecko-api';
 import { MultiLocation } from '@polkadot/types/interfaces';
+import axios from 'axios';
 import assetsJSON from './assets.json';
 import yargs from 'yargs';
+import 'dotenv/config';
 
 let args = yargs.options({
   network: { type: 'string', demandOption: true, alias: 'n' },
@@ -88,6 +89,9 @@ async function main() {
       // Calcualte Units Per Second
       let unitsPerSeconds = await calculateUnitsPerSecond(args);
 
+      // Add a 3-second pause
+      //await new Promise((resolve) => setTimeout(resolve, 3000));
+
       // Batch Tx
       batchTxs.push(
         await api.tx.assetManager.setAssetUnitsPerSecond(
@@ -117,40 +121,54 @@ async function calculateUnitsPerSecond(args) {
   // XCM Weight Cost
   const xcmTotalCost = BigInt(args['xwc']);
 
-  // Start CoinGecko API Client
-  const CoinGeckoClient = new CoinGecko();
   let tokenPrice;
   let tokenData = {} as any;
 
   // Get Token Price - If not provided it will use CoinGecko API to get it
   if (!args['price']) {
     if (args['asset']) {
-      tokenData = await CoinGeckoClient.simple.price({
-        ids: args['asset'],
-        vs_currencies: 'usd',
-      });
+      console.log(`Fetching Price for ${args['asset']}`);
+      try {
+        tokenData = await axios.get(
+          'https://api.coingecko.com/api/v3/simple/price',
+          {
+            params: {
+              ids: args['asset'],
+              vs_currencies: 'usd',
+              x_cg_demo_api_key: process.env.COINGEKO_API,
+            },
+            headers: {
+              Accept: 'application/json',
+            },
+          }
+        );
+      } catch (error) {
+        throw new Error(
+          `Something was not right for ${args['asset']} \n ${error}`
+        );
+      }
     } else {
       console.error(
         'You need to provide either an asset name with <--a> or a fixed price with <--p>'
       );
     }
 
-    if (tokenData.success && tokenData.data[args['asset']].usd) {
+    if (tokenData.status === 200 && tokenData.data[args['asset']].usd) {
       tokenPrice = BigInt(
         Math.round(decimalsFactor * tokenData.data[args['asset']].usd)
       );
     } else {
       throw new Error(
-        `Price is not available - Check https://www.coingecko.com/en/coins/${args['asset']}`
+        `Something was not right for ${args['asset']} \n ${tokenData.status} - ${tokenData.statusText}`
       );
     }
   } else {
     // Use given price
     tokenPrice = BigInt(Math.trunc(decimalsFactor * args['price']));
-    tokenData.success = true;
+    tokenData.status = 200;
   }
 
-  if (tokenData.success) {
+  if (tokenData.status === 200) {
     //Calculate Units Per Second
     const unitsPerSecond =
       (targetPrice * BigInt(10 ** 12) * BigInt(decimalsFactor)) /
