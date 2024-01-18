@@ -27,11 +27,6 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@moonbeam-network/api-augment@^0.1801.0":
-  version "0.1801.0"
-  resolved "https://registry.yarnpkg.com/@moonbeam-network/api-augment/-/api-augment-0.1801.0.tgz#76b6de99fa66b7c3d1403dc7509555f286ad72bb"
-  integrity sha512-sUqqWZhHVnrGQfJ37jzGzbMz5U3+U2SC5zLVFaJAqncairHuoAoPb8D9dza2erxSZTx5g8cqEeX+z4phMEJLWQ==
-
 "@noble/curves@^1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.3.0.tgz#01be46da4fd195822dab821e72f71bf4aeec635e"

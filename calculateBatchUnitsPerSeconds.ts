@@ -89,9 +89,6 @@ async function main() {
       // Calcualte Units Per Second
       let unitsPerSeconds = await calculateUnitsPerSecond(args);
 
-      // Add a 3-second pause
-      //await new Promise((resolve) => setTimeout(resolve, 3000));
-
       // Batch Tx
       batchTxs.push(
         await api.tx.assetManager.setAssetUnitsPerSecond(
