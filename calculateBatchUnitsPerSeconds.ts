@@ -6,6 +6,13 @@ import yargs from 'yargs';
 
 let args = yargs.options({
   network: { type: 'string', demandOption: true, alias: 'n' },
+  'xcm-weight-cost': {
+    type: 'string',
+    demandOption: true,
+    alias: 'xwc',
+    default: 1000000000,
+  },
+  target: { type: 'string', demandOption: true, alias: 't', default: '0.02' },
 }).argv;
 
 let wsEndpoint;
@@ -70,8 +77,9 @@ async function main() {
       //Build Args for Function
       args = {
         decimals: decimals,
-        'xcm-op-cost': '200000000',
         asset: networkAssets[asset]['api-name'],
+        target: args['target'],
+        xwc: args['xwc'],
       };
       if (networkAssets[asset]['price']) {
         args.price = networkAssets[asset]['price'];
@@ -102,9 +110,12 @@ async function main() {
 
 async function calculateUnitsPerSecond(args) {
   // Target Price in USD
-  const targetPrice = BigInt(10 ** args['decimals'] * 0.02); // 2 CENTS USD
-  const xcmTotalCost = BigInt(4 * args['xcm-op-cost']);
+  const targetPrice = BigInt(10 ** args['decimals'] * args['target']); // 2 CENTS USD
+
   const decimalsFactor = 10 ** args['decimals'];
+
+  // XCM Weight Cost
+  const xcmTotalCost = BigInt(args['xwc']);
 
   // Start CoinGecko API Client
   const CoinGeckoClient = new CoinGecko();
@@ -124,12 +135,18 @@ async function calculateUnitsPerSecond(args) {
       );
     }
 
-    tokenPrice = BigInt(
-      Math.round(decimalsFactor * tokenData.data[args['asset']].usd)
-    );
+    if (tokenData.success && tokenData.data[args['asset']].usd) {
+      tokenPrice = BigInt(
+        Math.round(decimalsFactor * tokenData.data[args['asset']].usd)
+      );
+    } else {
+      throw new Error(
+        `Price is not available - Check https://www.coingecko.com/en/coins/${args['asset']}`
+      );
+    }
   } else {
     // Use given price
-    tokenPrice = BigInt(decimalsFactor * args['price']);
+    tokenPrice = BigInt(Math.trunc(decimalsFactor * args['price']));
     tokenData.success = true;
   }
 
