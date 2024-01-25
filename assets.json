@@ -1,1042 +1,573 @@
 {
-  "moonbeam": [
-    {
-      "name": "Moonriver",
-      "symbol": "xcibcMOVR",
-      "rawSymbol": "MOVR",
-      "assetID": "78407957940239408223554844611219482002",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/moonriver",
-      "api-name": "moonriver",
-      "price": "",
-      "originalUnitsPerSecond": "4025764895330112721"
-    },
-    {
-      "name": "Zeitgeist",
-      "symbol": "xcZTG",
-      "rawSymbol": "ZTG",
-      "assetID": "150874409661081770150564009349448205842",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/zeitgeist",
-      "api-name": "zeitgeist",
-      "price": "",
-      "originalUnitsPerSecond": "9714292930617"
-    },
-    {
-      "name": "Polkadex",
-      "symbol": "xcPDEX",
-      "rawSymbol": "PDEX",
-      "assetID": "90225766094594282577230355136633846906",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/polkadex",
-      "api-name": "polkadex",
-      "price": "",
-      "originalUnitsPerSecond": "36155747389916"
-    },
-    {
-      "name": "Darwinia Parachain Token",
-      "symbol": "xcRING",
-      "rawSymbol": "RING",
-      "assetID": "125699734534028342599692732320197985871",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/darwinia-network-native-token",
-      "api-name": "darwinia-network-native-token",
-      "price": "",
-      "originalUnitsPerSecond": "4161561817503861929366"
-    },
-    {
-      "name": "Centrifuge",
-      "symbol": "xcCFG",
-      "rawSymbol": "CFG",
-      "assetID": "91372035960551235635465443179559840483",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/centrifuge",
-      "api-name": "centrifuge",
-      "price": "",
-      "originalUnitsPerSecond": "121808020814554596791"
-    },
-    {
-      "name": "HydraDX",
-      "symbol": "xcHDX",
-      "rawSymbol": "HDX",
-      "assetID": "69606720909260275826784788104880799692",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/hydradx",
-      "api-name": "hydradx",
-      "price": "",
-      "originalUnitsPerSecond": "982449521743572"
-    },
-    {
-      "name": "Celestia",
-      "symbol": "xcibcTIA",
-      "rawSymbol": "TIA",
-      "assetID": "133307414193833606001516599592873928539",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/celestia",
-      "api-name": "celestia",
-      "price": "",
-      "originalUnitsPerSecond": "10460251"
-    },
-    {
-      "name": "Equilibrium Token",
-      "symbol": "xcEQ",
-      "rawSymbol": "EQ",
-      "assetID": "190590555344745888270686124937537713878",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/equilibrium",
-      "api-name": "equilibrium",
-      "price": "",
-      "originalUnitsPerSecond": "3030303030303"
-    },
-    {
-      "name": "Inter Stable Token",
-      "symbol": "xcibcIST",
-      "rawSymbol": "IST",
-      "assetID": "141196559012917796508928734717797136690",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/inter-stable-token",
-      "api-name": "inter-stable-token",
-      "price": "",
-      "originalUnitsPerSecond": "24950099"
-    },
-    {
-      "name": "Bifrost Voucher DOT",
-      "symbol": "xcvDOT",
-      "rawSymbol": "vDOT",
-      "assetID": "29085784439601774464560083082574142143",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/voucher-dot",
-      "api-name": "voucher-dot",
-      "price": "",
-      "originalUnitsPerSecond": "79192605528"
-    },
-    {
-      "name": "Acala Liquid DOT",
-      "symbol": "xcLDOT",
-      "rawSymbol": "LDOT",
-      "assetID": "225719522181998468294117309041779353812",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/liquid-staking-dot",
-      "api-name": "liquid-staking-dot",
-      "price": "",
-      "originalUnitsPerSecond": "66995123757"
-    },
-    {
-      "name": "Astar",
-      "symbol": "xcASTR",
-      "rawSymbol": "ASTR",
-      "assetID": "224077081838586484055667086558292981199",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/astar",
-      "api-name": "astar",
-      "price": "",
-      "originalUnitsPerSecond": "99824309215780226800"
-    },
-    {
-      "name": "Agoric",
-      "symbol": "xcibcBLD",
-      "rawSymbol": "BLD",
-      "assetID": "199907282886248358976504623107230837230",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/agoric",
-      "api-name": "agoric",
-      "price": "",
-      "originalUnitsPerSecond": "170842046"
-    },
-    {
-      "name": "USD Coin",
-      "symbol": "xcUSDC",
-      "rawSymbol": "USDC",
-      "assetID": "166377000701797186346254371275954761085",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/beam-bridged-usdc-beam",
-      "api-name": "beam-bridged-usdc-beam",
-      "price": "",
-      "originalUnitsPerSecond": "29141454"
-    },
-    {
-      "name": "Subsocial",
-      "symbol": "xcSUB",
-      "rawSymbol": "SUB",
-      "assetID": "89994634370519791027168048838578580624",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/subsocial",
-      "api-name": "subsocial",
-      "price": "",
-      "originalUnitsPerSecond": "3846153846153"
-    },
-    {
-      "name": "Cosmos Hub",
-      "symbol": "xcibcATOM",
-      "rawSymbol": "ATOM",
-      "assetID": "138280378441551394289980644963240827219",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/cosmos",
-      "api-name": "cosmos",
-      "price": "",
-      "originalUnitsPerSecond": "2900232"
-    },
-    {
-      "name": "Picasso",
-      "symbol": "xcibcPICA",
-      "rawSymbol": "PICA",
-      "assetID": "228510780171552721666262089780561563481",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/picasso",
-      "api-name": "picasso",
-      "price": "",
-      "originalUnitsPerSecond": "16700847735031030"
-    },
-    {
-      "name": "Acala Dollar",
-      "symbol": "xcaUSD",
-      "rawSymbol": "aUSD",
-      "assetID": "110021739665376159354538090254163045594",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/acala-dollar-acala",
-      "api-name": "acala-dollar-acala",
-      "price": "",
-      "originalUnitsPerSecond": "25000000000000"
-    },
-    {
-      "name": "Tether USD",
-      "symbol": "xcUSDT",
-      "rawSymbol": "USDT",
-      "assetID": "311091173110107856861649819128533077277",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bridged-tether-fuse",
-      "api-name": "bridged-tether-fuse",
-      "price": "",
-      "originalUnitsPerSecond": "25000000"
-    },
-    {
-      "name": "Nodle",
-      "symbol": "xcNODL",
-      "rawSymbol": "NODL",
-      "assetID": "309163521958167876851250718453738106865",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/nodle-network",
-      "api-name": "nodle-network",
-      "price": "",
-      "originalUnitsPerSecond": "911024766208269"
-    },
-    {
-      "name": "interBTC",
-      "symbol": "xcIBTC",
-      "rawSymbol": "IBTC",
-      "assetID": "120637696315203257380661607956669368914",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/ibtc-2",
-      "api-name": "ibtc-2",
-      "price": "",
-      "originalUnitsPerSecond": "117205"
-    },
-    {
-      "name": "Manta",
-      "symbol": "xcMANTA",
-      "rawSymbol": "MANTA",
-      "assetID": "166446646689194205559791995948102903873",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/manta-network",
-      "api-name": "manta-network",
-      "price": "",
-      "originalUnitsPerSecond": "13888888888888888888"
-    },
-    {
-      "name": "Interlay",
-      "symbol": "xcINTR",
-      "rawSymbol": "INTR",
-      "assetID": "101170542313601871197860408087030232491",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/interlay",
-      "api-name": "interlay",
-      "price": "",
-      "originalUnitsPerSecond": "3529278897735"
-    },
-    {
-      "name": "BNC",
-      "symbol": "xcBNC",
-      "rawSymbol": "BNC",
-      "assetID": "165823357460190568952172802245839421906",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bifrost-native-coin",
-      "api-name": "bifrost-native-coin",
-      "price": "",
-      "originalUnitsPerSecond": "196152276935630"
-    },
-    {
-      "name": "PARA",
-      "symbol": "xcPARA",
-      "rawSymbol": "PARA",
-      "assetID": "32615670524745285411807346420584982855",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/parallel-finance",
-      "api-name": "parallel-finance",
-      "price": "",
-      "originalUnitsPerSecond": "759878419452887"
-    },
-    {
-      "name": "xcDOT",
-      "symbol": "xcDOT",
-      "rawSymbol": "DOT",
-      "assetID": "42259045809535163221576417993425387648",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/binance-peg-polkadot",
-      "api-name": "binance-peg-polkadot",
-      "price": "",
-      "originalUnitsPerSecond": "33068783068"
-    },
-    {
-      "name": "Pendulum",
-      "symbol": "xcPEN",
-      "rawSymbol": "PEN",
-      "assetID": "45647473099451451833602657905356404688",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/pendulum-chain",
-      "api-name": "pendulum-chain",
-      "price": "",
-      "originalUnitsPerSecond": "312500000000000"
-    },
-    {
-      "name": "Acala",
-      "symbol": "xcACA",
-      "rawSymbol": "ACA",
-      "assetID": "224821240862170613278369189818311486111",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/acala",
-      "api-name": "acala",
-      "price": "",
-      "originalUnitsPerSecond": "115534810638445"
-    },
-    {
-      "name": "OriginTrail Parachain Token",
-      "symbol": "xcOTP",
-      "rawSymbol": "OTP",
-      "assetID": "238111524681612888331172110363070489924",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/origintrail-parachain",
-      "api-name": "origintrail-parachain",
-      "price": "",
-      "originalUnitsPerSecond": "447142602271573"
-    },
-    {
-      "name": "Phala Token",
-      "symbol": "xcPHA",
-      "rawSymbol": "PHA",
-      "assetID": "132685552157663328694213725410064821485",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/pha",
-      "api-name": "pha",
-      "price": "",
-      "originalUnitsPerSecond": "233311246535327"
-    }
-  ],
-  "moonriver": [
-    {
-      "name": "Crust Shadow Native Token",
-      "symbol": "xcCSM",
-      "rawSymbol": "CSM",
-      "assetID": "108457044225666871745333730479173774551",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/crust-storage-market",
-      "api-name": "crust-storage-market",
-      "price": "",
-      "originalUnitsPerSecond": "2848454257812455"
-    },
-    {
-      "name": "Shiden",
-      "symbol": "xcSDN",
-      "rawSymbol": "SDN",
-      "assetID": "16797826370226091782818345603793389938",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/shiden",
-      "api-name": "shiden",
-      "price": "",
-      "originalUnitsPerSecond": "81460289737958539970"
-    },
-    {
-      "name": "HKO",
-      "symbol": "xcHKO",
-      "rawSymbol": "HKO",
-      "assetID": "76100021443485661246318545281171740067",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": 0.010423,
-      "originalUnitsPerSecond": "187969924812030"
-    },
-    {
-      "name": "Kintsugi Wrapped BTC",
-      "symbol": "xcKBTC",
-      "rawSymbol": "KBTC",
-      "assetID": "328179947973504579459046439826496046832",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/kintsugi-btc",
-      "api-name": "kintsugi-btc",
-      "price": "",
-      "originalUnitsPerSecond": "117139"
-    },
-    {
-      "name": "Robonomics Native Token",
-      "symbol": "xcXRT",
-      "rawSymbol": "XRT",
-      "assetID": "108036400430056508975016746969135344601",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "robonomics-network",
-      "api-name": "robonomics-network",
-      "price": "",
-      "originalUnitsPerSecond": "8865248226"
-    },
-    {
-      "name": "Turing Network",
-      "symbol": "xcTUR",
-      "rawSymbol": "TUR",
-      "assetID": "133300872918374599700079037156071917454",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/turing-network",
-      "api-name": "turing-network",
-      "price": "",
-      "originalUnitsPerSecond": "12870841109466"
-    },
-    {
-      "name": "Calamari",
-      "symbol": "xcKMA",
-      "rawSymbol": "KMA",
-      "assetID": "213357169630950964874127107356898319277",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/calamari-network",
-      "api-name": "calamari-network",
-      "price": "",
-      "originalUnitsPerSecond": "13681387839982487"
-    },
-    {
-      "name": "LIT",
-      "symbol": "xcLIT",
-      "rawSymbol": "LIT",
-      "assetID": "65216491554813189869575508812319036608",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/litentry",
-      "api-name": "litentry",
-      "price": "",
-      "originalUnitsPerSecond": "32399535520258"
-    },
-    {
-      "name": "Crab Parachain Token",
-      "symbol": "xcCRAB",
-      "rawSymbol": "CRAB",
-      "assetID": "173481220575862801646329923366065693029",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": 0.00099,
-      "originalUnitsPerSecond": "26243963888305689691370"
-    },
-    {
-      "name": "Phala Token",
-      "symbol": "xcPHA",
-      "rawSymbol": "PHA",
-      "assetID": "189307976387032586987344677431204943363",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/pha",
-      "api-name": "pha",
-      "price": "",
-      "originalUnitsPerSecond": "233182852665746"
-    },
-    {
-      "name": "aSEED",
-      "symbol": "xcaSeed",
-      "rawSymbol": "aSeed",
-      "assetID": "214920334981412447805621250067209749032",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/ausd-seed-acala",
-      "api-name": "ausd-seed-acala",
-      "price": "",
-      "originalUnitsPerSecond": "25000000000000"
-    },
-    {
-      "name": "Kintsugi Native Token",
-      "symbol": "xcKINT",
-      "rawSymbol": "KINT",
-      "assetID": "175400718394635817552109270754364440562",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/kintsugi",
-      "api-name": "kintsugi",
-      "price": "",
-      "originalUnitsPerSecond": "12019230769230"
-    },
-    {
-      "name": "Picasso",
-      "symbol": "xcPICA",
-      "rawSymbol": "PICA",
-      "assetID": "167283995827706324502761431814209211090",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/picasso",
-      "api-name": "picasso",
-      "price": "",
-      "originalUnitsPerSecond": "54016680350892355"
-    },
-    {
-      "name": "TEER",
-      "symbol": "xcTEER",
-      "rawSymbol": "TEER",
-      "assetID": "105075627293246237499203909093923548958",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/integritee",
-      "api-name": "integritee",
-      "price": "",
-      "originalUnitsPerSecond": "36367339219993"
-    },
-    {
-      "name": "Mangata X Native Token",
-      "symbol": "xcMGX",
-      "rawSymbol": "MGX",
-      "assetID": "118095707745084482624853002839493125353",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/mangata-x",
-      "api-name": "mangata-x",
-      "price": "",
-      "originalUnitsPerSecond": "28511962133267652721171"
-    },
-    {
-      "name": "Tether USD",
-      "symbol": "xcUSDT",
-      "rawSymbol": "USDT",
-      "assetID": "311091173110107856861649819128533077277",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bridged-tether-fuse",
-      "api-name": "bridged-tether-fuse",
-      "price": "",
-      "originalUnitsPerSecond": "25000000"
-    },
-    {
-      "name": "xcRMRK",
-      "symbol": "xcRMRK",
-      "rawSymbol": "RMRK",
-      "assetID": "182365888117048807484804376330534607370",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/rmrk",
-      "api-name": "rmrk",
-      "price": "",
-      "originalUnitsPerSecond": "77639751552"
-    },
-    {
-      "name": "xcKSM",
-      "symbol": "xcKSM",
-      "rawSymbol": "KSM",
-      "assetID": "42259045809535163221576417993425387648",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/kusama",
-      "api-name": "kusama",
-      "price": "",
-      "originalUnitsPerSecond": "511456628477"
-    },
-    {
-      "name": "Karura",
-      "symbol": "xcKAR",
-      "rawSymbol": "KAR",
-      "assetID": "10810581592933651521121702237638664357",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/karura",
-      "api-name": "karura",
-      "price": "",
-      "originalUnitsPerSecond": "49564722606073"
-    },
-    {
-      "name": "xcBNC",
-      "symbol": "xcBNC",
-      "rawSymbol": "BNC",
-      "assetID": "319623561105283008236062145480775032445",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bifrost-native-coin",
-      "api-name": "bifrost-native-coin",
-      "price": "",
-      "originalUnitsPerSecond": "131352192005380"
-    }
-  ],
-  "moonbase": [
-    {
-      "name": "Crust Shadow Native Token",
-      "symbol": "xcCSM",
-      "rawSymbol": "CSM",
-      "assetID": "108457044225666871745333730479173774551",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/crust-storage-market",
-      "api-name": "crust-storage-market",
-      "price": "",
-      "originalUnitsPerSecond": "3160863952622442"
-    },
-    {
-      "name": "Astar",
-      "symbol": "xcASTR",
-      "rawSymbol": "ASTR",
-      "assetID": "16797826370226091782818345603793389938",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/astar",
-      "api-name": "astar",
-      "price": "",
-      "originalUnitsPerSecond": "84753519813677862041"
-    },
-    {
-      "name": "HKO",
-      "symbol": "xcHKO",
-      "rawSymbol": "HKO",
-      "assetID": "76100021443485661246318545281171740067",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": 0.010423,
-      "originalUnitsPerSecond": "187969924812030"
-    },
-    {
-      "name": "Polkadex Test Token",
-      "symbol": "xcPDEX",
-      "rawSymbol": "PDEX",
-      "assetID": "62171815555800780292345782481836202130",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/polkadex",
-      "api-name": "polkadex",
-      "price": "",
-      "originalUnitsPerSecond": "32584381328497"
-    },
-    {
-      "name": "Picasso",
-      "symbol": "xcPICA",
-      "rawSymbol": "PICA",
-      "assetID": "22417088946346045371238623691600461855",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/picasso",
-      "api-name": "picasso",
-      "price": "",
-      "originalUnitsPerSecond": "39493690882881459"
-    },
-    {
-      "name": "Tinker",
-      "symbol": "xcTNKR",
-      "rawSymbol": "TNKR",
-      "assetID": "138512078356357941985706694377215053953",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/tinkernet",
-      "api-name": "tinkernet",
-      "price": "",
-      "originalUnitsPerSecond": "178571428571428"
-    },
-    {
-      "name": "Polkadex Test Token",
-      "symbol": "xcPDEX",
-      "rawSymbol": "PDEX",
-      "assetID": "90225766094594282577230355136633846906",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/polkadex",
-      "api-name": "polkadex",
-      "price": "",
-      "originalUnitsPerSecond": "3289473684211"
-    },
-    {
-      "name": "xcMockRMRK",
-      "symbol": "xcmRMRK",
-      "rawSymbol": "mRMRK",
-      "assetID": "280024949790879322861822169150106601773",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "76687116564"
-    },
-    {
-      "name": "XRT",
-      "symbol": "xcXRT",
-      "rawSymbol": "XRT",
-      "assetID": "108036400430056508975016746969135344601",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "robonomics-network",
-      "api-name": "robonomics-network",
-      "price": "",
-      "originalUnitsPerSecond": "1285347043"
-    },
-    {
-      "name": "Centrifuge",
-      "symbol": "xcCFG",
-      "rawSymbol": "CFG",
-      "assetID": "91372035960551235635465443179559840483",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/centrifuge",
-      "api-name": "centrifuge",
-      "price": "",
-      "originalUnitsPerSecond": "121808020814554596791"
-    },
-    {
-      "name": "Turing Network",
-      "symbol": "xcTUR",
-      "rawSymbol": "TUR",
-      "assetID": "133300872918374599700079037156071917454",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/turing-network",
-      "api-name": "turing-network",
-      "price": "",
-      "originalUnitsPerSecond": "400000000000"
-    },
-    {
-      "name": "HydraDX",
-      "symbol": "xcHDX",
-      "rawSymbol": "HDX",
-      "assetID": "69606720909260275826784788104880799692",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/hydradx",
-      "api-name": "hydradx",
-      "price": "",
-      "originalUnitsPerSecond": "98244952174357"
-    },
-    {
-      "name": "Nodle",
-      "symbol": "xcNODL",
-      "rawSymbol": "NODL",
-      "assetID": "128910205779035707777113095265150484699",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/nodle-network",
-      "api-name": "nodle-network",
-      "price": "",
-      "originalUnitsPerSecond": "533563764583471"
-    },
-    {
-      "name": "MangataX",
-      "symbol": "xcMGX",
-      "rawSymbol": "MGX",
-      "assetID": "337673893687553151312436182236099273778",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/mangata-x",
-      "api-name": "mangata-x",
-      "price": "",
-      "originalUnitsPerSecond": "2008032128514056224899"
-    },
-    {
-      "name": "Equilibrium Token",
-      "symbol": "xcEQ",
-      "rawSymbol": "EQ",
-      "assetID": "190590555344745888270686124937537713878",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/equilibrium",
-      "api-name": "equilibrium",
-      "price": "",
-      "originalUnitsPerSecond": "3030303030303"
-    },
-    {
-      "name": "Litentry",
-      "symbol": "xcLIT",
-      "rawSymbol": "LIT",
-      "assetID": "65216491554813189869575508812319036608",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/litentry",
-      "api-name": "litentry",
-      "price": "",
-      "originalUnitsPerSecond": "33239509278476"
-    },
-    {
-      "name": "xcTestToken1",
-      "symbol": "xcTT1",
-      "rawSymbol": "TT1",
-      "assetID": "156305701417244550631956600137082963628",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "50000000000"
-    },
-    {
-      "name": "Pangolin Alpha Network Native Token",
-      "symbol": "xcPARING",
-      "rawSymbol": "PARING",
-      "assetID": "173481220575862801646329923366065693029",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "13000000000"
-    },
-    {
-      "name": "PHA",
-      "symbol": "xcPHA",
-      "rawSymbol": "PHA",
-      "assetID": "189307976387032586987344677431204943363",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/pha",
-      "api-name": "pha",
-      "price": "",
-      "originalUnitsPerSecond": "234240311820703"
-    },
-    {
-      "name": "Agung",
-      "symbol": "xcAGNG",
-      "rawSymbol": "AGNG",
-      "assetID": "247904392428752551837302928375648826728",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "320102432778489116517"
-    },
-    {
-      "name": "Polkadex Token",
-      "symbol": "xcPDEX",
-      "rawSymbol": "PDEX",
-      "assetID": "255809804329513816629144221493516966233",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/polkadex",
-      "api-name": "polkadex",
-      "price": "",
-      "originalUnitsPerSecond": "187969924812"
-    },
-    {
-      "name": "xcAlphaUniqueQuartz",
-      "symbol": "xcAUQ",
-      "rawSymbol": "AUQ",
-      "assetID": "69536036667157951501899290870203586130",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "14293065004859642101652278"
-    },
-    {
-      "name": "Bifrost Polkadot",
-      "symbol": "xcBNC",
-      "rawSymbol": "BNC",
-      "assetID": "131139301019163526510593524852905318253",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bifrost-native-coin",
-      "api-name": "bifrost-native-coin",
-      "price": "",
-      "originalUnitsPerSecond": "427764115467223"
-    },
-    {
-      "name": "Zeitgeist",
-      "symbol": "ZTG",
-      "rawSymbol": "ZTG",
-      "assetID": "56557508561302779576079054873115361688",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/zeitgeist",
-      "api-name": "zeitgeist",
-      "price": "",
-      "originalUnitsPerSecond": "2490312683660"
-    },
-    {
-      "name": "xcKarura-Dollar",
-      "symbol": "xcKUSD",
-      "rawSymbol": "KUSD",
-      "assetID": "214920334981412447805621250067209749032",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/kolibri-usd",
-      "api-name": "kolibri-usd",
-      "price": "",
-      "originalUnitsPerSecond": "25000000000000"
-    },
-    {
-      "name": "BNC",
-      "symbol": "xcBNC",
-      "rawSymbol": "BNC",
-      "assetID": "565025040449484090264950386168462197",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/bifrost-native-coin",
-      "api-name": "bifrost-native-coin",
-      "price": "",
-      "originalUnitsPerSecond": "113801246123645"
-    },
-    {
-      "name": "TEER",
-      "symbol": "xcTEER",
-      "rawSymbol": "TEER",
-      "assetID": "105075627293246237499203909093923548958",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/integritee",
-      "api-name": "integritee",
-      "price": "",
-      "originalUnitsPerSecond": "35600820812524"
-    },
-    {
-      "name": "NEER",
-      "symbol": "xcNEER",
-      "rawSymbol": "NEER",
-      "assetID": "52280927600883288560727505734200597597",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/metaverse-network-pioneer",
-      "api-name": "metaverse-network-pioneer",
-      "price": "",
-      "originalUnitsPerSecond": "25000000000000000000"
-    },
-    {
-      "name": "Subsocial Cross-chain Token",
-      "symbol": "xcSOON",
-      "rawSymbol": "SOON",
-      "assetID": "205153165378836428058230526014907639736",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/subsocial",
-      "api-name": "subsocial",
-      "price": "",
-      "originalUnitsPerSecond": "31299982159010"
-    },
-    {
-      "name": "xcBETADEV",
-      "symbol": "BetaDev",
-      "rawSymbol": "BetaDev",
-      "assetID": "35487752324713722007834302681851459189",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "13000000000000000"
-    },
-    {
-      "name": "Amplitude",
-      "symbol": "xcAMPE",
-      "rawSymbol": "AMPE",
-      "assetID": "170050401128744171791743427490841452054",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "100000000000000"
-    },
-    {
-      "name": "xcLiquid-KSM",
-      "symbol": "xcLKSM",
-      "rawSymbol": "LKSM",
-      "assetID": "113757166108095571031373835444145329310",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/liquid-ksm",
-      "api-name": "liquid-ksm",
-      "price": "",
-      "originalUnitsPerSecond": "13000000000"
-    },
-    {
-      "name": "Manta Token",
-      "symbol": "xcMANTA",
-      "rawSymbol": "MANTA",
-      "assetID": "166446646689194205559791995948102903873",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/manta-network",
-      "api-name": "manta-network",
-      "price": "",
-      "originalUnitsPerSecond": "237642585551330798479"
-    },
-    {
-      "name": "Interlay",
-      "symbol": "xcINTR",
-      "rawSymbol": "INTR",
-      "assetID": "12009972993464827654650227422635011273",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/interlay",
-      "api-name": "interlay",
-      "price": "",
-      "originalUnitsPerSecond": "3529278897735"
-    },
-    {
-      "name": "xcGenshiro",
-      "symbol": "xcGENS",
-      "rawSymbol": "GENS",
-      "assetID": "54799287759721089563242211737206786491",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/genshiro",
-      "api-name": "genshiro",
-      "price": "",
-      "originalUnitsPerSecond": "13000000"
-    },
-    {
-      "name": "Basilisk",
-      "symbol": "xcBSX",
-      "rawSymbol": "BSX",
-      "assetID": "102433417954722588084020852587557555194",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/basilisk",
-      "api-name": "basilisk",
-      "price": "",
-      "originalUnitsPerSecond": "13000000000"
-    },
-    {
-      "name": "xcUNIT",
-      "symbol": "xcUNIT",
-      "rawSymbol": "UNIT",
-      "assetID": "42259045809535163221576417993425387648",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "523779593547"
-    },
-    {
-      "name": "xcKarura",
-      "symbol": "xcKAR",
-      "rawSymbol": "KAR",
-      "assetID": "10810581592933651521121702237638664357",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/karura",
-      "api-name": "karura",
-      "price": "",
-      "originalUnitsPerSecond": "53291495956241"
-    },
-    {
-      "name": "xcKintsugi",
-      "symbol": "XCKINT",
-      "rawSymbol": "XCKINT",
-      "assetID": "52837329483626033197882584414163773570",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "12135922330097"
-    },
-    {
-      "name": "SORA",
-      "symbol": "xcXOR",
-      "rawSymbol": "XOR",
-      "assetID": "311268264572112097121297553553681143695",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/sora",
-      "api-name": "sora",
-      "price": "",
-      "originalUnitsPerSecond": "11861805026304484509233"
-    },
-    {
-      "name": "Kintsugi Wrapped BTC",
-      "symbol": "xcKBTC",
-      "rawSymbol": "KBTC",
-      "assetID": "122531866982275221270783173426160033062",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/kintsugi-btc",
-      "api-name": "kintsugi-btc",
-      "price": "",
-      "originalUnitsPerSecond": "116675"
-    },
-    {
-      "name": "xcSubsquidToken",
-      "symbol": "xcSQD",
-      "rawSymbol": "SQD",
-      "assetID": "43334822478192663701103039265086012377",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "1"
-    },
-    {
-      "name": "ICZ",
-      "symbol": "xcICZ",
-      "rawSymbol": "ICZ",
-      "assetID": "246731721631919099516624243100078522143",
-      "hasCoinGeckoAPI": false,
-      "hasCoinGeckoURL": "",
-      "api-name": "",
-      "price": "",
-      "originalUnitsPerSecond": "25000000000000000000"
-    },
-    {
-      "name": "OriginTrail Parachain Token",
-      "symbol": "xcOTP",
-      "rawSymbol": "OTP",
-      "assetID": "238111524681612888331172110363070489924",
-      "hasCoinGeckoAPI": true,
-      "hasCoinGeckoURL": "https://www.coingecko.com/en/coins/origintrail-parachain",
-      "api-name": "origintrail-parachain",
-      "price": "",
-      "originalUnitsPerSecond": "447142602271573"
-    }
-  ]
-}
+    "moonbeam": [
+      {
+        "name": "Moonriver",
+        "assetID": "78407957940239408223554844611219482002",
+        "api-name": "moonriver",
+        "price": 0
+      },
+      {
+        "name": "Zeitgeist",
+        "assetID": "150874409661081770150564009349448205842",
+        "api-name": "zeitgeist",
+        "price": 0
+      },
+      {
+        "name": "Polkadex",
+        "assetID": "90225766094594282577230355136633846906",
+        "api-name": "polkadex",
+        "price": 0
+      },
+      {
+        "name": "Darwinia Parachain Token",
+        "assetID": "125699734534028342599692732320197985871",
+        "api-name": "darwinia-network-native-token",
+        "price": 0
+      },
+      {
+        "name": "Centrifuge",
+        "assetID": "91372035960551235635465443179559840483",
+        "api-name": "centrifuge",
+        "price": 0
+      },
+      {
+        "name": "HydraDX",
+        "assetID": "69606720909260275826784788104880799692",
+        "api-name": "hydradx",
+        "price": 0
+      },
+      {
+        "name": "Celestia",
+        "assetID": "133307414193833606001516599592873928539",
+        "api-name": "celestia",
+        "price": 0
+      },
+      {
+        "name": "Equilibrium Token",
+        "assetID": "190590555344745888270686124937537713878",
+        "api-name": "equilibrium",
+        "price": 0
+      },
+      {
+        "name": "Inter Stable Token",
+        "assetID": "141196559012917796508928734717797136690",
+        "api-name": "inter-stable-token",
+        "price": 0
+      },
+      {
+        "name": "Bifrost Voucher DOT",
+        "assetID": "29085784439601774464560083082574142143",
+        "api-name": "voucher-dot",
+        "price": 0
+      },
+      {
+        "name": "Acala Liquid DOT",
+        "assetID": "225719522181998468294117309041779353812",
+        "api-name": "liquid-staking-dot",
+        "price": 0
+      },
+      {
+        "name": "Astar",
+        "assetID": "224077081838586484055667086558292981199",
+        "api-name": "astar",
+        "price": 0
+      },
+      {
+        "name": "Agoric",
+        "assetID": "199907282886248358976504623107230837230",
+        "api-name": "agoric",
+        "price": 0
+      },
+      {
+        "name": "USD Coin",
+        "assetID": "166377000701797186346254371275954761085",
+        "api-name": "usdc",
+        "price": 0
+      },
+      {
+        "name": "Subsocial",
+        "assetID": "89994634370519791027168048838578580624",
+        "api-name": "subsocial",
+        "price": 0
+      },
+      {
+        "name": "Cosmos Hub",
+        "assetID": "138280378441551394289980644963240827219",
+        "api-name": "cosmos",
+        "price": 0
+      },
+      {
+        "name": "Picasso",
+        "assetID": "228510780171552721666262089780561563481",
+        "api-name": "picasso",
+        "price": 0
+      },
+      {
+        "name": "Acala Dollar",
+        "assetID": "110021739665376159354538090254163045594",
+        "api-name": "acala-dollar-acala",
+        "price": 0
+      },
+      {
+        "name": "Tether USD",
+        "assetID": "311091173110107856861649819128533077277",
+        "api-name": "tether",
+        "price": 0
+      },
+      {
+        "name": "Nodle",
+        "assetID": "309163521958167876851250718453738106865",
+        "api-name": "nodle-network",
+        "price": 0
+      },
+      {
+        "name": "interBTC",
+        "assetID": "120637696315203257380661607956669368914",
+        "api-name": "bitcoin",
+        "price": 0
+      },
+      {
+        "name": "Manta",
+        "assetID": "166446646689194205559791995948102903873",
+        "api-name": "manta-network",
+        "price": 0
+      },
+      {
+        "name": "Interlay",
+        "assetID": "101170542313601871197860408087030232491",
+        "api-name": "interlay",
+        "price": 0
+      },
+      {
+        "name": "BNC",
+        "assetID": "165823357460190568952172802245839421906",
+        "api-name": "bifrost-native-coin",
+        "price": 0
+      },
+      {
+        "name": "PARA",
+        "assetID": "32615670524745285411807346420584982855",
+        "api-name": "parallel-finance",
+        "price": 0
+      },
+      {
+        "name": "xcDOT",
+        "assetID": "42259045809535163221576417993425387648",
+        "api-name": "polkadot",
+        "price": 0
+      },
+      {
+        "name": "Pendulum",
+        "assetID": "45647473099451451833602657905356404688",
+        "api-name": "pendulum-chain",
+        "price": 0
+      },
+      {
+        "name": "Acala",
+        "assetID": "224821240862170613278369189818311486111",
+        "api-name": "acala",
+        "price": 0
+      },
+      {
+        "name": "OriginTrail Parachain Token",
+        "assetID": "238111524681612888331172110363070489924",
+        "api-name": "origintrail-parachain",
+        "price": 0
+      },
+      {
+        "name": "Phala Token",
+        "assetID": "132685552157663328694213725410064821485",
+        "api-name": "pha",
+        "price": 0
+      }
+    ],
+    "moonriver": [
+      {
+        "name": "Crust Shadow Native Token",
+        "assetID": "108457044225666871745333730479173774551",
+        "api-name": "crust-storage-market",
+        "price": 0
+      },
+      {
+        "name": "Shiden",
+        "assetID": "16797826370226091782818345603793389938",
+        "api-name": "shiden",
+        "price": 0
+      },
+      {
+        "name": "HKO",
+        "assetID": "76100021443485661246318545281171740067",
+        "api-name": "",
+        "price": 0.010423
+      },
+      {
+        "name": "Kintsugi Wrapped BTC",
+        "assetID": "328179947973504579459046439826496046832",
+        "api-name": "kintsugi-btc",
+        "price": 0
+      },
+      {
+        "name": "Robonomics Native Token",
+        "assetID": "108036400430056508975016746969135344601",
+        "api-name": "robonomics-network",
+        "price": 0
+      },
+      {
+        "name": "Turing Network",
+        "assetID": "133300872918374599700079037156071917454",
+        "api-name": "turing-network",
+        "price": 0
+      },
+      {
+        "name": "Calamari",
+        "assetID": "213357169630950964874127107356898319277",
+        "api-name": "calamari-network",
+        "price": 0
+      },
+      {
+        "name": "LIT",
+        "assetID": "65216491554813189869575508812319036608",
+        "api-name": "litentry",
+        "price": 0
+      },
+      {
+        "name": "Crab Parachain Token",
+        "assetID": "173481220575862801646329923366065693029",
+        "api-name": "",
+        "price": 0.00099
+      },
+      {
+        "name": "Phala Token",
+        "assetID": "189307976387032586987344677431204943363",
+        "api-name": "pha",
+        "price": 0
+      },
+      {
+        "name": "aSEED",
+        "assetID": "214920334981412447805621250067209749032",
+        "api-name": "ausd-seed-acala",
+        "price": 0
+      },
+      {
+        "name": "Kintsugi Native Token",
+        "assetID": "175400718394635817552109270754364440562",
+        "api-name": "kintsugi",
+        "price": 0
+      },
+      {
+        "name": "Picasso",
+        "assetID": "167283995827706324502761431814209211090",
+        "api-name": "picasso",
+        "price": 0
+      },
+      {
+        "name": "TEER",
+        "assetID": "105075627293246237499203909093923548958",
+        "api-name": "integritee",
+        "price": 0
+      },
+      {
+        "name": "Mangata X Native Token",
+        "assetID": "118095707745084482624853002839493125353",
+        "api-name": "mangata-x",
+        "price": 0
+      },
+      {
+        "name": "Tether USD",
+        "assetID": "311091173110107856861649819128533077277",
+        "api-name": "tether",
+        "price": 0
+      },
+      {
+        "name": "xcRMRK",
+        "assetID": "182365888117048807484804376330534607370",
+        "api-name": "rmrk",
+        "price": 0
+      },
+      {
+        "name": "xcKSM",
+        "assetID": "42259045809535163221576417993425387648",
+        "api-name": "kusama",
+        "price": 0
+      },
+      {
+        "name": "Karura",
+        "assetID": "10810581592933651521121702237638664357",
+        "api-name": "karura",
+        "price": 0
+      },
+      {
+        "name": "xcBNC",
+        "assetID": "319623561105283008236062145480775032445",
+        "api-name": "bifrost-native-coin",
+        "price": 0
+      }
+    ],
+    "moonbase": [
+      {
+        "name": "Crust Shadow Native Token",
+        "assetID": "108457044225666871745333730479173774551",
+        "api-name": "crust-storage-market",
+        "price": 0
+      },
+      {
+        "name": "Astar",
+        "assetID": "16797826370226091782818345603793389938",
+        "api-name": "astar",
+        "price": 0
+      },
+      {
+        "name": "HKO",
+        "assetID": "76100021443485661246318545281171740067",
+        "api-name": "",
+        "price": 0.010423
+      },
+      {
+        "name": "Polkadex Test Token",
+        "assetID": "62171815555800780292345782481836202130",
+        "api-name": "polkadex",
+        "price": 0
+      },
+      {
+        "name": "Picasso",
+        "assetID": "22417088946346045371238623691600461855",
+        "api-name": "picasso",
+        "price": 0
+      },
+      {
+        "name": "Tinker",
+        "assetID": "138512078356357941985706694377215053953",
+        "api-name": "tinkernet",
+        "price": 0
+      },
+      {
+        "name": "Polkadex Test Token",
+        "assetID": "90225766094594282577230355136633846906",
+        "api-name": "polkadex",
+        "price": 0
+      },
+      {
+        "name": "xcMockRMRK",
+        "assetID": "280024949790879322861822169150106601773",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "XRT",
+        "assetID": "108036400430056508975016746969135344601",
+        "api-name": "robonomics-network",
+        "price": 0
+      },
+      {
+        "name": "Centrifuge",
+        "assetID": "91372035960551235635465443179559840483",
+        "api-name": "centrifuge",
+        "price": 0
+      },
+      {
+        "name": "Turing Network",
+        "assetID": "133300872918374599700079037156071917454",
+        "api-name": "turing-network",
+        "price": 0
+      },
+      {
+        "name": "HydraDX",
+        "assetID": "69606720909260275826784788104880799692",
+        "api-name": "hydradx",
+        "price": 0
+      },
+      {
+        "name": "Nodle",
+        "assetID": "128910205779035707777113095265150484699",
+        "api-name": "nodle-network",
+        "price": 0
+      },
+      {
+        "name": "MangataX",
+        "assetID": "337673893687553151312436182236099273778",
+        "api-name": "mangata-x",
+        "price": 0
+      },
+      {
+        "name": "Equilibrium Token",
+        "assetID": "190590555344745888270686124937537713878",
+        "api-name": "equilibrium",
+        "price": 0
+      },
+      {
+        "name": "Litentry",
+        "assetID": "65216491554813189869575508812319036608",
+        "api-name": "litentry",
+        "price": 0
+      },
+      {
+        "name": "xcTestToken1",
+        "assetID": "156305701417244550631956600137082963628",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "Pangolin Alpha Network Native Token",
+        "assetID": "173481220575862801646329923366065693029",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "PHA",
+        "assetID": "189307976387032586987344677431204943363",
+        "api-name": "pha",
+        "price": 0
+      },
+      {
+        "name": "Agung",
+        "assetID": "247904392428752551837302928375648826728",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "Polkadex Token",
+        "assetID": "255809804329513816629144221493516966233",
+        "api-name": "polkadex",
+        "price": 0
+      },
+      {
+        "name": "xcAlphaUniqueQuartz",
+        "assetID": "69536036667157951501899290870203586130",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "Bifrost Polkadot",
+        "assetID": "131139301019163526510593524852905318253",
+        "api-name": "bifrost-native-coin",
+        "price": 0
+      },
+      {
+        "name": "Zeitgeist",
+        "assetID": "56557508561302779576079054873115361688",
+        "api-name": "zeitgeist",
+        "price": 0
+      },
+      {
+        "name": "xcKarura-Dollar",
+        "assetID": "214920334981412447805621250067209749032",
+        "api-name": "kolibri-usd",
+        "price": 0
+      },
+      {
+        "name": "BNC",
+        "assetID": "565025040449484090264950386168462197",
+        "api-name": "bifrost-native-coin",
+        "price": 0
+      },
+      {
+        "name": "TEER",
+        "assetID": "105075627293246237499203909093923548958",
+        "api-name": "integritee",
+        "price": 0
+      },
+      {
+        "name": "NEER",
+        "assetID": "52280927600883288560727505734200597597",
+        "api-name": "metaverse-network-pioneer",
+        "price": 0
+      },
+      {
+        "name": "Subsocial Cross-chain Token",
+        "assetID": "205153165378836428058230526014907639736",
+        "api-name": "subsocial",
+        "price": 0
+      },
+      {
+        "name": "xcBETADEV",
+        "assetID": "35487752324713722007834302681851459189",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "Amplitude",
+        "assetID": "170050401128744171791743427490841452054",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "xcLiquid-KSM",
+        "assetID": "113757166108095571031373835444145329310",
+        "api-name": "liquid-ksm",
+        "price": 0
+      },
+      {
+        "name": "Manta Token",
+        "assetID": "166446646689194205559791995948102903873",
+        "api-name": "manta-network",
+        "price": 0
+      },
+      {
+        "name": "Interlay",
+        "assetID": "12009972993464827654650227422635011273",
+        "api-name": "interlay",
+        "price": 0
+      },
+      {
+        "name": "xcGenshiro",
+        "assetID": "54799287759721089563242211737206786491",
+        "api-name": "genshiro",
+        "price": 0
+      },
+      {
+        "name": "Basilisk",
+        "assetID": "102433417954722588084020852587557555194",
+        "api-name": "basilisk",
+        "price": 0
+      },
+      {
+        "name": "xcUNIT",
+        "assetID": "42259045809535163221576417993425387648",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "xcKarura",
+        "assetID": "10810581592933651521121702237638664357",
+        "api-name": "karura",
+        "price": 0
+      },
+      {
+        "name": "xcKintsugi",
+        "assetID": "52837329483626033197882584414163773570",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "SORA",
+        "assetID": "311268264572112097121297553553681143695",
+        "api-name": "sora",
+        "price": 0
+      },
+      {
+        "name": "Kintsugi Wrapped BTC",
+        "assetID": "122531866982275221270783173426160033062",
+        "api-name": "kintsugi-btc",
+        "price": 0
+      },
+      {
+        "name": "xcSubsquidToken",
+        "assetID": "43334822478192663701103039265086012377",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "ICZ",
+        "assetID": "246731721631919099516624243100078522143",
+        "api-name": "",
+        "price": 0
+      },
+      {
+        "name": "OriginTrail Parachain Token",
+        "assetID": "238111524681612888331172110363070489924",
+        "api-name": "origintrail-parachain",
+        "price": 0
+      }
+    ]
+  }
+  
