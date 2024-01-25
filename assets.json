@@ -3,570 +3,476 @@
       {
         "name": "Moonriver",
         "assetID": "78407957940239408223554844611219482002",
-        "api-name": "moonriver",
-        "price": 0
+        "api-name": "moonriver"
       },
       {
         "name": "Zeitgeist",
         "assetID": "150874409661081770150564009349448205842",
-        "api-name": "zeitgeist",
-        "price": 0
+        "api-name": "zeitgeist"
       },
       {
         "name": "Polkadex",
         "assetID": "90225766094594282577230355136633846906",
-        "api-name": "polkadex",
-        "price": 0
+        "api-name": "polkadex"
       },
       {
         "name": "Darwinia Parachain Token",
         "assetID": "125699734534028342599692732320197985871",
-        "api-name": "darwinia-network-native-token",
-        "price": 0
+        "api-name": "darwinia-network-native-token"
       },
       {
         "name": "Centrifuge",
         "assetID": "91372035960551235635465443179559840483",
-        "api-name": "centrifuge",
-        "price": 0
+        "api-name": "centrifuge"
       },
       {
         "name": "HydraDX",
         "assetID": "69606720909260275826784788104880799692",
-        "api-name": "hydradx",
-        "price": 0
+        "api-name": "hydradx"
       },
       {
         "name": "Celestia",
         "assetID": "133307414193833606001516599592873928539",
-        "api-name": "celestia",
-        "price": 0
+        "api-name": "celestia"
       },
       {
         "name": "Equilibrium Token",
         "assetID": "190590555344745888270686124937537713878",
-        "api-name": "equilibrium",
-        "price": 0
+        "api-name": "equilibrium"
       },
       {
         "name": "Inter Stable Token",
         "assetID": "141196559012917796508928734717797136690",
-        "api-name": "inter-stable-token",
-        "price": 0
+        "api-name": "inter-stable-token"
       },
       {
         "name": "Bifrost Voucher DOT",
         "assetID": "29085784439601774464560083082574142143",
-        "api-name": "voucher-dot",
-        "price": 0
+        "api-name": "voucher-dot"
       },
       {
         "name": "Acala Liquid DOT",
         "assetID": "225719522181998468294117309041779353812",
-        "api-name": "liquid-staking-dot",
-        "price": 0
+        "api-name": "liquid-staking-dot"
       },
       {
         "name": "Astar",
         "assetID": "224077081838586484055667086558292981199",
-        "api-name": "astar",
-        "price": 0
+        "api-name": "astar"
       },
       {
         "name": "Agoric",
         "assetID": "199907282886248358976504623107230837230",
-        "api-name": "agoric",
-        "price": 0
+        "api-name": "agoric"
       },
       {
         "name": "USD Coin",
         "assetID": "166377000701797186346254371275954761085",
-        "api-name": "usdc",
-        "price": 0
+        "api-name": "usdc"
       },
       {
         "name": "Subsocial",
         "assetID": "89994634370519791027168048838578580624",
-        "api-name": "subsocial",
-        "price": 0
+        "api-name": "subsocial"
       },
       {
         "name": "Cosmos Hub",
         "assetID": "138280378441551394289980644963240827219",
-        "api-name": "cosmos",
-        "price": 0
+        "api-name": "cosmos"
       },
       {
         "name": "Picasso",
         "assetID": "228510780171552721666262089780561563481",
-        "api-name": "picasso",
-        "price": 0
+        "api-name": "picasso"
       },
       {
         "name": "Acala Dollar",
         "assetID": "110021739665376159354538090254163045594",
-        "api-name": "acala-dollar-acala",
-        "price": 0
+        "api-name": "acala-dollar-acala"
       },
       {
         "name": "Tether USD",
         "assetID": "311091173110107856861649819128533077277",
-        "api-name": "tether",
-        "price": 0
+        "api-name": "tether"
       },
       {
         "name": "Nodle",
         "assetID": "309163521958167876851250718453738106865",
-        "api-name": "nodle-network",
-        "price": 0
+        "api-name": "nodle-network"
       },
       {
         "name": "interBTC",
         "assetID": "120637696315203257380661607956669368914",
-        "api-name": "bitcoin",
-        "price": 0
+        "api-name": "bitcoin"
       },
       {
         "name": "Manta",
         "assetID": "166446646689194205559791995948102903873",
-        "api-name": "manta-network",
-        "price": 0
+        "api-name": "manta-network"
       },
       {
         "name": "Interlay",
         "assetID": "101170542313601871197860408087030232491",
-        "api-name": "interlay",
-        "price": 0
+        "api-name": "interlay"
       },
       {
         "name": "BNC",
         "assetID": "165823357460190568952172802245839421906",
-        "api-name": "bifrost-native-coin",
-        "price": 0
+        "api-name": "bifrost-native-coin"
       },
       {
         "name": "PARA",
         "assetID": "32615670524745285411807346420584982855",
-        "api-name": "parallel-finance",
-        "price": 0
+        "api-name": "parallel-finance"
       },
       {
         "name": "xcDOT",
         "assetID": "42259045809535163221576417993425387648",
-        "api-name": "polkadot",
-        "price": 0
+        "api-name": "polkadot"
       },
       {
         "name": "Pendulum",
         "assetID": "45647473099451451833602657905356404688",
-        "api-name": "pendulum-chain",
-        "price": 0
+        "api-name": "pendulum-chain"
       },
       {
         "name": "Acala",
         "assetID": "224821240862170613278369189818311486111",
-        "api-name": "acala",
-        "price": 0
+        "api-name": "acala"
       },
       {
         "name": "OriginTrail Parachain Token",
         "assetID": "238111524681612888331172110363070489924",
-        "api-name": "origintrail-parachain",
-        "price": 0
+        "api-name": "origintrail-parachain"
       },
       {
         "name": "Phala Token",
         "assetID": "132685552157663328694213725410064821485",
-        "api-name": "pha",
-        "price": 0
+        "api-name": "pha"
       }
     ],
     "moonriver": [
       {
         "name": "Crust Shadow Native Token",
         "assetID": "108457044225666871745333730479173774551",
-        "api-name": "crust-storage-market",
-        "price": 0
+        "api-name": "crust-storage-market"
       },
       {
         "name": "Shiden",
         "assetID": "16797826370226091782818345603793389938",
-        "api-name": "shiden",
-        "price": 0
+        "api-name": "shiden"
       },
       {
         "name": "HKO",
         "assetID": "76100021443485661246318545281171740067",
-        "api-name": "",
         "price": 0.010423
       },
       {
         "name": "Kintsugi Wrapped BTC",
         "assetID": "328179947973504579459046439826496046832",
-        "api-name": "kintsugi-btc",
-        "price": 0
+        "api-name": "kintsugi-btc"
       },
       {
         "name": "Robonomics Native Token",
         "assetID": "108036400430056508975016746969135344601",
-        "api-name": "robonomics-network",
-        "price": 0
+        "api-name": "robonomics-network"
       },
       {
         "name": "Turing Network",
         "assetID": "133300872918374599700079037156071917454",
-        "api-name": "turing-network",
-        "price": 0
+        "api-name": "turing-network"
       },
       {
         "name": "Calamari",
         "assetID": "213357169630950964874127107356898319277",
-        "api-name": "calamari-network",
-        "price": 0
+        "api-name": "calamari-network"
       },
       {
         "name": "LIT",
         "assetID": "65216491554813189869575508812319036608",
-        "api-name": "litentry",
-        "price": 0
+        "api-name": "litentry"
       },
       {
         "name": "Crab Parachain Token",
         "assetID": "173481220575862801646329923366065693029",
-        "api-name": "",
         "price": 0.00099
       },
       {
         "name": "Phala Token",
         "assetID": "189307976387032586987344677431204943363",
-        "api-name": "pha",
-        "price": 0
+        "api-name": "pha"
       },
       {
         "name": "aSEED",
         "assetID": "214920334981412447805621250067209749032",
-        "api-name": "ausd-seed-acala",
-        "price": 0
+        "api-name": "ausd-seed-acala"
       },
       {
         "name": "Kintsugi Native Token",
         "assetID": "175400718394635817552109270754364440562",
-        "api-name": "kintsugi",
-        "price": 0
+        "api-name": "kintsugi"
       },
       {
         "name": "Picasso",
         "assetID": "167283995827706324502761431814209211090",
-        "api-name": "picasso",
-        "price": 0
+        "api-name": "picasso"
       },
       {
         "name": "TEER",
         "assetID": "105075627293246237499203909093923548958",
-        "api-name": "integritee",
-        "price": 0
+        "api-name": "integritee"
       },
       {
         "name": "Mangata X Native Token",
         "assetID": "118095707745084482624853002839493125353",
-        "api-name": "mangata-x",
-        "price": 0
+        "api-name": "mangata-x"
       },
       {
         "name": "Tether USD",
         "assetID": "311091173110107856861649819128533077277",
-        "api-name": "tether",
-        "price": 0
+        "api-name": "tether"
       },
       {
         "name": "xcRMRK",
         "assetID": "182365888117048807484804376330534607370",
-        "api-name": "rmrk",
-        "price": 0
+        "api-name": "rmrk"
       },
       {
         "name": "xcKSM",
         "assetID": "42259045809535163221576417993425387648",
-        "api-name": "kusama",
-        "price": 0
+        "api-name": "kusama"
       },
       {
         "name": "Karura",
         "assetID": "10810581592933651521121702237638664357",
-        "api-name": "karura",
-        "price": 0
+        "api-name": "karura"
       },
       {
         "name": "xcBNC",
         "assetID": "319623561105283008236062145480775032445",
-        "api-name": "bifrost-native-coin",
-        "price": 0
+        "api-name": "bifrost-native-coin"
       }
     ],
     "moonbase": [
       {
         "name": "Crust Shadow Native Token",
         "assetID": "108457044225666871745333730479173774551",
-        "api-name": "crust-storage-market",
-        "price": 0
+        "api-name": "crust-storage-market"
       },
       {
         "name": "Astar",
         "assetID": "16797826370226091782818345603793389938",
-        "api-name": "astar",
-        "price": 0
+        "api-name": "astar"
       },
       {
         "name": "HKO",
         "assetID": "76100021443485661246318545281171740067",
-        "api-name": "",
         "price": 0.010423
       },
       {
         "name": "Polkadex Test Token",
         "assetID": "62171815555800780292345782481836202130",
-        "api-name": "polkadex",
-        "price": 0
+        "api-name": "polkadex"
       },
       {
         "name": "Picasso",
         "assetID": "22417088946346045371238623691600461855",
-        "api-name": "picasso",
-        "price": 0
+        "api-name": "picasso"
       },
       {
         "name": "Tinker",
         "assetID": "138512078356357941985706694377215053953",
-        "api-name": "tinkernet",
-        "price": 0
+        "api-name": "tinkernet"
       },
       {
         "name": "Polkadex Test Token",
         "assetID": "90225766094594282577230355136633846906",
-        "api-name": "polkadex",
-        "price": 0
+        "api-name": "polkadex"
       },
       {
         "name": "xcMockRMRK",
         "assetID": "280024949790879322861822169150106601773",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "XRT",
         "assetID": "108036400430056508975016746969135344601",
-        "api-name": "robonomics-network",
-        "price": 0
+        "api-name": "robonomics-network"
       },
       {
         "name": "Centrifuge",
         "assetID": "91372035960551235635465443179559840483",
-        "api-name": "centrifuge",
-        "price": 0
+        "api-name": "centrifuge"
       },
       {
         "name": "Turing Network",
         "assetID": "133300872918374599700079037156071917454",
-        "api-name": "turing-network",
-        "price": 0
+        "api-name": "turing-network"
       },
       {
         "name": "HydraDX",
         "assetID": "69606720909260275826784788104880799692",
-        "api-name": "hydradx",
-        "price": 0
+        "api-name": "hydradx"
       },
       {
         "name": "Nodle",
         "assetID": "128910205779035707777113095265150484699",
-        "api-name": "nodle-network",
-        "price": 0
+        "api-name": "nodle-network"
       },
       {
         "name": "MangataX",
         "assetID": "337673893687553151312436182236099273778",
-        "api-name": "mangata-x",
-        "price": 0
+        "api-name": "mangata-x"
       },
       {
         "name": "Equilibrium Token",
         "assetID": "190590555344745888270686124937537713878",
-        "api-name": "equilibrium",
-        "price": 0
+        "api-name": "equilibrium"
       },
       {
         "name": "Litentry",
         "assetID": "65216491554813189869575508812319036608",
-        "api-name": "litentry",
-        "price": 0
+        "api-name": "litentry"
       },
       {
         "name": "xcTestToken1",
         "assetID": "156305701417244550631956600137082963628",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "Pangolin Alpha Network Native Token",
         "assetID": "173481220575862801646329923366065693029",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "PHA",
         "assetID": "189307976387032586987344677431204943363",
-        "api-name": "pha",
-        "price": 0
+        "api-name": "pha"
       },
       {
         "name": "Agung",
         "assetID": "247904392428752551837302928375648826728",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "Polkadex Token",
         "assetID": "255809804329513816629144221493516966233",
-        "api-name": "polkadex",
-        "price": 0
+        "api-name": "polkadex"
       },
       {
         "name": "xcAlphaUniqueQuartz",
         "assetID": "69536036667157951501899290870203586130",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "Bifrost Polkadot",
         "assetID": "131139301019163526510593524852905318253",
-        "api-name": "bifrost-native-coin",
-        "price": 0
+        "api-name": "bifrost-native-coin"
       },
       {
         "name": "Zeitgeist",
         "assetID": "56557508561302779576079054873115361688",
-        "api-name": "zeitgeist",
-        "price": 0
+        "api-name": "zeitgeist"
       },
       {
         "name": "xcKarura-Dollar",
         "assetID": "214920334981412447805621250067209749032",
-        "api-name": "kolibri-usd",
-        "price": 0
+        "api-name": "kolibri-usd"
       },
       {
         "name": "BNC",
         "assetID": "565025040449484090264950386168462197",
-        "api-name": "bifrost-native-coin",
-        "price": 0
+        "api-name": "bifrost-native-coin"
       },
       {
         "name": "TEER",
         "assetID": "105075627293246237499203909093923548958",
-        "api-name": "integritee",
-        "price": 0
+        "api-name": "integritee"
       },
       {
         "name": "NEER",
         "assetID": "52280927600883288560727505734200597597",
-        "api-name": "metaverse-network-pioneer",
-        "price": 0
+        "api-name": "metaverse-network-pioneer"
       },
       {
         "name": "Subsocial Cross-chain Token",
         "assetID": "205153165378836428058230526014907639736",
-        "api-name": "subsocial",
-        "price": 0
+        "api-name": "subsocial"
       },
       {
         "name": "xcBETADEV",
         "assetID": "35487752324713722007834302681851459189",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "Amplitude",
         "assetID": "170050401128744171791743427490841452054",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "xcLiquid-KSM",
         "assetID": "113757166108095571031373835444145329310",
-        "api-name": "liquid-ksm",
-        "price": 0
+        "api-name": "liquid-ksm"
       },
       {
         "name": "Manta Token",
         "assetID": "166446646689194205559791995948102903873",
-        "api-name": "manta-network",
-        "price": 0
+        "api-name": "manta-network"
       },
       {
         "name": "Interlay",
         "assetID": "12009972993464827654650227422635011273",
-        "api-name": "interlay",
-        "price": 0
+        "api-name": "interlay"
       },
       {
         "name": "xcGenshiro",
         "assetID": "54799287759721089563242211737206786491",
-        "api-name": "genshiro",
-        "price": 0
+        "api-name": "genshiro"
       },
       {
         "name": "Basilisk",
         "assetID": "102433417954722588084020852587557555194",
-        "api-name": "basilisk",
-        "price": 0
+        "api-name": "basilisk"
       },
       {
         "name": "xcUNIT",
         "assetID": "42259045809535163221576417993425387648",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "xcKarura",
         "assetID": "10810581592933651521121702237638664357",
-        "api-name": "karura",
-        "price": 0
+        "api-name": "karura"
       },
       {
         "name": "xcKintsugi",
         "assetID": "52837329483626033197882584414163773570",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "SORA",
         "assetID": "311268264572112097121297553553681143695",
-        "api-name": "sora",
-        "price": 0
+        "api-name": "sora"
       },
       {
         "name": "Kintsugi Wrapped BTC",
         "assetID": "122531866982275221270783173426160033062",
-        "api-name": "kintsugi-btc",
-        "price": 0
+        "api-name": "kintsugi-btc"
       },
       {
         "name": "xcSubsquidToken",
         "assetID": "43334822478192663701103039265086012377",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "ICZ",
         "assetID": "246731721631919099516624243100078522143",
-        "api-name": "",
         "price": 0
       },
       {
         "name": "OriginTrail Parachain Token",
         "assetID": "238111524681612888331172110363070489924",
-        "api-name": "origintrail-parachain",
-        "price": 0
+        "api-name": "origintrail-parachain"
       }
     ]
   }
