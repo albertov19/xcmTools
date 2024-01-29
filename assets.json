@@ -1,7 +1,7 @@
 {
     "moonbeam": [
       {
-        "name": "Moonriver",
+        "name": "Composable Finance Moonriver IBC",
         "assetID": "78407957940239408223554844611219482002",
         "api-name": "moonriver"
       },
