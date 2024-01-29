@@ -132,7 +132,7 @@ async function calculateUnitsPerSecond(args) {
             params: {
               ids: args['asset'],
               vs_currencies: 'usd',
-              x_cg_demo_api_key: process.env.COINGEKO_API,
+              x_cg_demo_api_key: process.env.COINGECKO_API,
             },
             headers: {
               Accept: 'application/json',
