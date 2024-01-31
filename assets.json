@@ -68,7 +68,7 @@
       {
         "name": "USD Coin",
         "assetID": "166377000701797186346254371275954761085",
-        "api-name": "usdc"
+        "api-name": "usd-coin"
       },
       {
         "name": "Subsocial",
@@ -143,7 +143,7 @@
       {
         "name": "OriginTrail Parachain Token",
         "assetID": "238111524681612888331172110363070489924",
-        "api-name": "origintrail-parachain"
+        "price": 0.0347
       },
       {
         "name": "Phala Token",
