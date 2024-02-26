@@ -56,7 +56,7 @@ async function main() {
   for (let asset in networkAssets) {
     // Get MultiLocation
     let assetML: MultiLocation = api.createType(
-      'MultiLocation',
+      'StagingXcmV3MultiLocation',
       (
         await api.query.assetManager.assetIdType(networkAssets[asset].assetID)
       ).toJSON()['xcm']
@@ -64,10 +64,10 @@ async function main() {
 
     // Check The Asset is a Fee Asset
     let checkAsset = await api.query.assetManager.assetTypeUnitsPerSecond({
-      XCM: assetML,
+      Xcm: assetML,
     });
 
-    if (checkAsset.toHuman() !== 'null') {
+    if (checkAsset.toHuman() !== null) {
       // Get Assets Decimals
       let decimals = (
         await api.query.assets.metadata(networkAssets[asset].assetID)
@@ -78,6 +78,7 @@ async function main() {
       //Build Args for Function
       args = {
         decimals: decimals,
+        name: networkAssets[asset]['name'],
         asset: networkAssets[asset]['api-name'],
         target: args['target'],
         xwc: args['xwc'],
@@ -92,10 +93,14 @@ async function main() {
       // Batch Tx
       batchTxs.push(
         await api.tx.assetManager.setAssetUnitsPerSecond(
-          { XCM: assetML },
+          { Xcm: assetML },
           unitsPerSeconds,
           numSupportedAssets + 10
         )
+      );
+    } else {
+      throw new Error(
+        `Script could not check Units Per Second for ${networkAssets[asset].name} - Check types!`
       );
     }
   }
@@ -124,7 +129,9 @@ async function calculateUnitsPerSecond(args) {
   // Get Token Price - If not provided it will use CoinGecko API to get it
   if (!args['price']) {
     if (args['asset']) {
-      console.log(`Fetching Price for ${args['asset']}`);
+      console.log(
+        `Fetching Price for ${args['name']} - API ID ${args['asset']}`
+      );
       try {
         tokenData = await axios.get(
           'https://api.coingecko.com/api/v3/simple/price',

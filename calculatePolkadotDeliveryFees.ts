@@ -2,35 +2,36 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import type { XcmVersionedXcm } from '@polkadot/types/lookup';
 import '@moonbeam-network/api-augment';
 
-//https://github.com/polkadot-fellows/runtimes/blob/main/system-parachains/constants/src/kusama.rs#L37-L42
-const UNITS = BigInt(1000000000000);
-const QUID = UNITS / BigInt(30);
-const CENTS = QUID / BigInt(100);
-const GRAND = QUID * BigInt(1000);
+//https://github.com/polkadot-fellows/runtimes/blob/main/system-parachains/constants/src/polkadot.rs
+const UNITS = BigInt(10000000000);
+const DOLLARS = UNITS;
+const GRAND = DOLLARS * BigInt(1000);
+const CENTS = DOLLARS / BigInt(100);
 const MILLICENTS = CENTS / BigInt(1000);
 
 // CHECK Network
 
-// Kusama Constants
-// https://github.com/polkadot-fellows/runtimes/blob/18a45cc963ad473708829f1b720fbd64a11d8d52/relay/kusama/src/xcm_config.rs#L119-L120
+// Polkadot Constants
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/relay/polkadot/src/xcm_config.rs#L129-L130
 // https://github.com/polkadot-fellows/runtimes/blob/b5ba0e91d5dd3c4020e848b27be5f2b47e16f281/relay/kusama/src/lib.rs#L416
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/relay/polkadot/src/xcm_config.rs#L126
 // ExponentialPrice<FeeAssetId, BaseDeliveryFee, TransactionByteFee, Dmp>;
 // pub const TransactionByteFee: Balance = 10 * MILLICENTS;
 // pub const BaseDeliveryFee: u128 = CENTS.saturating_mul(3);
 
-const ksmAHTxByteFee = BigInt(10) * MILLICENTS;
-const ksmAHToSiblingBaseDeliveryFee = BigInt(3) * CENTS;
+const dotAHTxByteFee = BigInt(10) * MILLICENTS;
+const dotAHToSiblingBaseDeliveryFee = BigInt(3) * CENTS;
 
 // Config:
-const wsEndpoint = 'wss://kusama-rpc.dwellir.com';
+const wsEndpoint = 'wss://polkadot-rpc.dwellir.com';
 
-// Asset MultiLocation - This is RMRK for Example
+// Asset MultiLocation
 const assetML = {
   parents: 0,
   interior: { here: null },
 };
-const amount = '340282366920938463463374607431768211455';
-const paraID = 2023; //ParaID
+const amount = '100000000000';
+const paraID = 2004; //ParaID
 
 /*
 	fn price_for_delivery(id: Self::Id, msg: &Xcm<()>) -> Assets {
@@ -131,10 +132,10 @@ const main = async () => {
 
   const fee =
     convDeliveryFeeFactor *
-    (ksmAHToSiblingBaseDeliveryFee + BigInt(xcmBytes.length) * ksmAHTxByteFee);
+    (dotAHToSiblingBaseDeliveryFee + BigInt(xcmBytes.length) * dotAHTxByteFee);
 
   console.log(
-    `The Max Kusama XCM Delivery Fee in KSM is ${Number(fee) / Number(UNITS)}`
+    `The Max Polkadot XCM Delivery Fee in DOT is ${Number(fee) / Number(UNITS)}`
   );
 };
 main();

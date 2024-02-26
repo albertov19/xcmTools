@@ -6,40 +6,30 @@ import '@moonbeam-network/api-augment';
 const UNITS = BigInt(1000000000000);
 const QUID = UNITS / BigInt(30);
 const CENTS = QUID / BigInt(100);
-const GRAND = QUID * BigInt(1000);
+const GRAND = QUID / BigInt(1000);
 const MILLICENTS = CENTS / BigInt(1000);
 
-// CHECK Network
-
-// Kusama Constants
-// https://github.com/polkadot-fellows/runtimes/blob/18a45cc963ad473708829f1b720fbd64a11d8d52/relay/kusama/src/xcm_config.rs#L119-L120
-// https://github.com/polkadot-fellows/runtimes/blob/b5ba0e91d5dd3c4020e848b27be5f2b47e16f281/relay/kusama/src/lib.rs#L416
-// ExponentialPrice<FeeAssetId, BaseDeliveryFee, TransactionByteFee, Dmp>;
-// pub const TransactionByteFee: Balance = 10 * MILLICENTS;
-// pub const BaseDeliveryFee: u128 = CENTS.saturating_mul(3);
-
-const ksmAHTxByteFee = BigInt(10) * MILLICENTS;
+// AssetHub Constants
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs#L639-L647
 const ksmAHToSiblingBaseDeliveryFee = BigInt(3) * CENTS;
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs#L237
+const ksmAHTxByteFee = MILLICENTS;
 
 // Config:
-const wsEndpoint = 'wss://kusama-rpc.dwellir.com';
-
-// Asset MultiLocation - This is RMRK for Example
+const wsEndpoint = 'wss://statemine-rpc.dwellir.com';
+// Asset MultiLocation - This is the Asset with the longest index possible
 const assetML = {
-  parents: 0,
-  interior: { here: null },
+  parents: 1,
+  interior: {
+    x3: [
+      { parachain: 1000 },
+      { palletInstance: 50 },
+      { generalIndex: '340282366920938463463374607431768211455' },
+    ],
+  },
 };
 const amount = '340282366920938463463374607431768211455';
 const paraID = 2023; //ParaID
-
-/*
-	fn price_for_delivery(id: Self::Id, msg: &Xcm<()>) -> Assets {
-		let msg_fee = (msg.encoded_size() as u128).saturating_mul(M::get());
-		let fee_sum = B::get().saturating_add(msg_fee);
-		let amount = F::get_fee_factor(id).saturating_mul_int(fee_sum);
-		(A::get(), amount).into()
-	}
-  */
 
 // Provider
 const provider = new WsProvider(wsEndpoint);
@@ -120,7 +110,7 @@ const main = async () => {
 
   // Get Delivery Fee Factor
   // https://github.com/paritytech/polkadot-sdk/blob/acd043bc5fc9acfa384b69c33e341f925ef250a7/cumulus/pallets/xcmp-queue/src/lib.rs#L960-L965
-  const deliveryFeeFactor = await api.query.dmp.deliveryFeeFactor(
+  const deliveryFeeFactor = await api.query.xcmpQueue.deliveryFeeFactor(
     BigInt(paraID)
   );
   await api.disconnect();
@@ -134,7 +124,7 @@ const main = async () => {
     (ksmAHToSiblingBaseDeliveryFee + BigInt(xcmBytes.length) * ksmAHTxByteFee);
 
   console.log(
-    `The Max Kusama XCM Delivery Fee in KSM is ${Number(fee) / Number(UNITS)}`
+    `The Max AH Delivery Fee in KSM is ${Number(fee) / Number(UNITS)}`
   );
 };
 main();

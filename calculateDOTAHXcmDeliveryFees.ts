@@ -2,34 +2,30 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import type { XcmVersionedXcm } from '@polkadot/types/lookup';
 import '@moonbeam-network/api-augment';
 
-//https://github.com/polkadot-fellows/runtimes/blob/main/system-parachains/constants/src/kusama.rs#L37-L42
-const UNITS = BigInt(1000000000000);
-const QUID = UNITS / BigInt(30);
-const CENTS = QUID / BigInt(100);
-const GRAND = QUID / BigInt(1000);
+//https://github.com/polkadot-fellows/runtimes/blob/main/system-parachains/constants/src/polkadot.rs
+const UNITS = BigInt(10000000000);
+const DOLLARS = UNITS;
+const GRAND = DOLLARS * BigInt(1000);
+const CENTS = DOLLARS / BigInt(100);
 const MILLICENTS = CENTS / BigInt(1000);
 
 // AssetHub Constants
-// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs#L639-L647
-// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs#L237
-const ksmAHTxByteFee = MILLICENTS;
-const ksmAHToSiblingBaseDeliveryFee = BigInt(3) * CENTS;
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-polkadot/src/lib.rs#L577
+const dotAHToSiblingBaseDeliveryFee = BigInt(3) * CENTS;
+// https://github.com/polkadot-fellows/runtimes/blob/v1.1.0/system-parachains/asset-hubs/asset-hub-polkadot/src/lib.rs#L247
+const dotAHTxByteFee = MILLICENTS;
 
 // Config:
-const wsEndpoint = 'wss://statemine-rpc.dwellir.com';
-// Asset MultiLocation - This is RMRK for Example
+const wsEndpoint = 'wss://statemint-rpc.dwellir.com';
+// Asset MultiLocation - This is the asset with the longest index possible
 const assetML = {
   parents: 1,
   interior: {
-    x3: [
-      { parachain: 1000 },
-      { palletInstance: 50 },
-      { generalIndex: '340282366920938463463374607431768211455' },
-    ],
+    x3: [{ parachain: 1000 }, { palletInstance: 50 }, { generalIndex: '1337' }],
   },
 };
-const amount = '340282366920938463463374607431768211455';
-const paraID = 2023; //ParaID
+const amount = '1000000';
+const paraID = 2004; //ParaID
 
 // Provider
 const provider = new WsProvider(wsEndpoint);
@@ -121,10 +117,10 @@ const main = async () => {
 
   const fee =
     convDeliveryFeeFactor *
-    (ksmAHToSiblingBaseDeliveryFee + BigInt(xcmBytes.length) * ksmAHTxByteFee);
+    (dotAHToSiblingBaseDeliveryFee + BigInt(xcmBytes.length) * dotAHTxByteFee);
 
   console.log(
-    `The Max AH Delivery Fee in KSM is ${Number(fee) / Number(UNITS)}`
+    `The Max AH Delivery Fee in DOT is ${Number(fee) / Number(UNITS)}`
   );
 };
 main();
